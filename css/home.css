@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    background-color: #654cae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    padding: 0;
+    margin: 0;
+}
+header img{
+    width: 15rem;
+    margin-top: 3rem;
+    
+}
+.logo{
+    width: 60%;
+}
+
+.menu {
+    width: 100%;
+    font-size: 100%;
+
+}
+
+.menu button{
+    font-size: 100%;
+    width: 10%;
+    background-color: #654cae;
+    color: white;
+    border: #654cae;
+    padding-right: 15%;
+}
+
+.imagens {
+    max-width: 2,25rem;
+}
+
+.tamanhosection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tamanhosection > div{
+    flex: 1 1 20%;
+}
+.tamanhosection div{
+    margin: 4%;
+    margin-top: 1%;
+    max-width: 16%;
+    margin-bottom: 0;
+}
+figcaption{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 1.5rem;
+    color: #654cae;
+}
+
+.menu button svg {
+    width: 24%; /* Aumenta o tamanho dos ícones */
+    height: 24%; /* Aumenta o tamanho dos ícones */
+  }
+  
+  /* CSS para centralizar as imagens, adicionar borda redonda e centralizar o texto */
+
+  .tamanhosection { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: center;
+    gap: 1rem; /* Espaçamento entre as divs  */
+  }
+
+.tamanhosection div {
+        text-align: center; /* Centraliza o texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+      
+ 
+ .tamanhosection .imagens {
+    border-radius: 5%;  /*Bordas redondas  */
+    width: 100%; /* Ajusta o tamanho da imagem  */
+    height: 90%; /* Ajusta o tamanho da imagem  */
+    object-fit: cover; /* Garante que a imagem cobre totalmente o container  */
+    margin-bottom: 3%; /* Espaço entre a imagem e o texto  */
+}
+ 

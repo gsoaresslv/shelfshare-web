@@ -1,0 +1,98 @@
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #664CAF;
+    border-bottom-right-radius: 3%;
+    border-top-right-radius: 3%;
+}
+.card{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.textfield label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #664CAF;
+}
+.imgback{
+    max-width: 30%;
+    max-height: 30%;
+}
+.card-head{
+    display: flex;
+    padding: 6%;
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+.card-head h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #664CAF;
+}
+.card-title{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #664CAF;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.card-body button{
+    margin: 3%;
+    width: 80%;
+}
+.form-check{
+    margin-bottom: 2%;
+}
+.form-check a{
+    padding: 0;
+    color: #664CAF;
+    background-color: white;
+    border: 0;
+}
+p{
+    color: red;
+    margin: 0;
+}
+.form-check-input:checked{
+    background-color: #664CAF;
+    color: white;
+}
