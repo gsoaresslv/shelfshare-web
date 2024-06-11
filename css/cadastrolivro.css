@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.screen{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+.itens_left{
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+}
+.itens_rigth{
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+}
+input{
+    background-color: #d1d5f0;
+    width: 100vh;
+    border: none;
+    border-radius: 1.5vh;
+    margin: 0.5rem;
+    outline: none;
+}
+.itens_cadastro{
+    margin: 2rem;
+}
+.itens_cadastro input{
+    height: 4vh;
+    gap: 4vh;
+}
+.img #capa_livro{
+    width: 20vw;
+    max-width: 70vh;
+    max-height: 50vh;
+}
+.itens_left p{
+    font-size: 2rem;
+}
+.selector{
+    margin: 2rem;
+}
+.selector #seletor{
+    width: 47vw;
+    height: 4.3vh;
+    border-radius: 1rem;
+}
+.btn_cadastrar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.btn_cadastrar button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 4vh;
+    width: 12vw;
+}
+button{
+    color: aliceblue;
+    background-color: #664caf;
+    border-radius: 2rem;
+    border: none;
+    text-align: center;
+    margin: 2rem;
+}
+.sinopse input{
+    height: 17vh;
+}
+.sinopse{
+    margin: 2rem;
+}
+
+.file-upload-form {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .file-upload-label input {
+    display: none;
+  }
+  .file-upload-label svg {
+    height: 50px;
+    fill: rgb(82, 82, 82);
+    margin-bottom: 20px;
+  }
+  .file-upload-label {
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 30px 70px;
+    border-radius: 40px;
+    border: 2px dashed rgb(82, 82, 82);
+    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+  }
+  .file-upload-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 17vw;
+  }
+  .browse-button {
+    background-color: rgb(82, 82, 82);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s;
+  }
+  .browse-button:hover {
+    background-color: rgb(14, 14, 14);
+  }
+  
