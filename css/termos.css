@@ -1,0 +1,53 @@
+* {
+    margin: 0.2rem;/* define a margem*/
+    padding: 0; /* define o espaçamento*/
+    box-sizing: border-box; /* define o tamanho da caixa*/
+}
+
+
+header{
+   
+    text-align: center;/* Centraliza o header na página */
+    font-family: Georgia,sans-serif; /*Define a fonte */
+    color: #664caf;/*Define a cor */
+}
+
+body {
+    font-family: Helvetica, sans-serif; /*Define a fonte do body*/
+    background-color: #fff;/*Define a cor de fundo do body*/
+}
+
+
+section {
+    max-width: 40rem; /* Define a largura máxima da seção */
+    margin: 2rem auto; /* Centraliza a seção na página */
+    padding: 2rem; /* Adiciona espaçamento interno */
+    background-color: #fff; /* Cor de fundo */
+    border-radius: 1rem; /* Adiciona cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+}
+
+
+
+section p {
+    text-align: justify;
+    line-height: 1.6; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+    
+
+footer {
+    background-color: #fff; /* Cor de fundo do footer */
+    color: #664caf; /* Cor do texto do footer */
+    text-align: center; /* Alinhamento do texto no centro */
+    padding: 1rem; /* Espaçamento interno*/
+    position: fixed; /* Fixa o footer na parte inferior */
+    left: 0;
+    width: 100%; /* Largura total */
+    border-top: 0.0625rem solid #ddd; /* Linha superior */
+}
