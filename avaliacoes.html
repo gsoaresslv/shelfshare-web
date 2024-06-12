@@ -46,7 +46,7 @@
 
                 <div id="feedbacks">
                     <div class="feedback">
-                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                        <img src="img/avatar.png" class="feedback-avatar" alt="">
 
                         <div class="feedback-content">
                             <p>
@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="feedback">
-                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                        <img src="img/avatar.png" class="feedback-avatar" alt="">
 
                         <div class="feedback-content">
                             <p>
@@ -87,13 +87,13 @@
                         </div>
                     </div>
                     <div id="your-feedback" class="feedback">
-                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                        <img src="img/avatar.png" class="feedback-avatar" alt="">
                         <div class="feedback-content">
                             <p id="nome-feedback"></p>
                             <p id="resenha-feedback"></p>
                         </div>
                     </div>
-                    <button id="btn-new-feedback" onclick="displayElement('new-feedback')" class="btn btn-primary">
+                    <button id="btn-new-feedback" onclick="displayElement('new-feedback')">
                         Escreva sua própria avaliação!
                     </button>
                     <div id="new-feedback" class="new-feedback">
@@ -107,7 +107,7 @@
                                 <input type="text" class="form-control" name="resenha" id="inputResenha" placeholder="Escreva sua avaliação sobre nossos serviços!"  >
                             </div>
                             <p id="erroFeedback"></p>
-                            <button id="envia-feedback" onclick="enviaAval()" class="btn-primary">
+                            <button type="button" id="envia-feedback" onclick="enviaAval()">
                                 Enviar avaliação
                             </button>
                         </div>

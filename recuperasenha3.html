@@ -18,16 +18,17 @@
     <form id="recuperar">
         <div class="senha">
             <div class="nova">
-                <label>Nova senha:</label>
-                <input type="password" name="password " id="password" required>
+                <label for="password">Nova senha:</label>
+                <input type="password" name="password" id="inputSenha" required>
             </div>
             <div class="confirmar">
-                <label>Confirmar nova senha:</label>
-                <input type="password" name="password " id="password" required>
+                <label for="password">Confirmar nova senha:</label>
+                <input type="password" name="password" id="inputConfirmacao" required>
+                <p id="erroConfirmaSenha"></p>
             </div>
         </div>
         <div class="botao">
-            <button type="submit">Enviar</button>
+            <button onclick="novaSenha()">Enviar</button>
         </div>
     </form>
     
