@@ -11,51 +11,7 @@
         gap: 20px;
     }
 }
-header {
-    width: 100%;
-    padding: 1,5rem;
-    position: sticky;
-    top: 0;
-    background-color: var(--color-primary-1);
-    z-index: 3;
-}
 
-#navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#nav_logo {
-    font-size: 24px;
-    color: var(--color-primary-6);
-}
-.nav-item-active a{
-    font-size: 1.5rem;
-    background-color: var(--color-neutral-2);
-    font-weight: bolder;
-    color: #664caf;
-    border-bottom: solid #664caf;
-}
-.nav-item a{
-    font-size: 1.5rem;
-    color: #664caf;
-    background-color: var(--color-neutral-2);
-    font-weight: bolder;
-    border: 0;
-    text-decoration: none;
-}
-.nav-item a:hover{
-    background-color: white;
-    color: #664caf;
-    border-bottom: solid #664caf;
-}   
-#nav_list {
-    display: flex;
-    list-style: none;
-    gap: 48px;
-}
 #mobile_btn {
     display: none;
 }
