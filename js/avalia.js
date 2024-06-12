@@ -1,5 +1,11 @@
+const newfeedback= document.getElementById("new-feedback");
+const btnnewfeedback= document.getElementById("btn-new-feedback");
+btnnewfeedback.addEventListener("click", function() {displayElement(newfeedback)});
+
 function displayElement(elementId) {
-    document.getElementById(elementId).style.display = "flex";
+    console.log("????????")
+    var id = document.getElementById(elementId);
+    id.style.display = "flex";
 }
 function hideElement(elementId) {
     document.getElementById(elementId).style.display = "none";
