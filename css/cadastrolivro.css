@@ -1,58 +1,142 @@
-body{
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.img{
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    background-color: #654cae;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-.screen{
+
+header img{
+    width: 20rem;
+    margin-top: 4rem;
+}
+.logo{
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    font-size: 100%;
+
+}
+
+.menu button{
+    margin-left: 2rem;
+    font-size: 100%;
+    width: 10%;
+    background-color: #654cae;
+    color: white;
+    border: #654cae;
+    padding-right: 20%;
+}
+
+.menu button svg {
+    width: 2rem; /* Aumenta o tamanho dos ícones */
+    height: 2rem; /* Aumenta o tamanho dos ícones */
+  }
+
+  .main{
     display: flex;
     flex-direction: row;
-    width: 50vw;
-    height: 98vh;
-    justify-content: center;
-    align-items: center;
-    gap: 30%;
 }
-.itens_left{
-    align-items: center;
-    width: 50vw;
-    height: 50vh;
+.esquerda{
+    width: 50%;
     text-align: center;
+    margin-top: 4%;
 }
-.itens_rigth{
-    align-items: center;
-    width: 50vw;
-    height: 50vh;
+
+.direita{
+    width: 50%;
+    text-align: center;
+    font-size: 100%;
+    margin-top: 3%;
+    margin-right: 13%;
 }
-input{
+
+label{
+    margin-right: 24rem;
+}
+
+.form-select{
+    margin-top: 0.5rem;
+}
+
+.autor{
+    margin-right: 27rem
+}
+.editora{
+    margin-right: 26rem
+}
+.genero{
+    margin-right: 26rem
+}
+
+.descricao{
+    margin-right: 25rem
+}
+
+#capa_livro{
+    justify-content: center;
+    width: 40%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+h1{
+    color: #654cae;
+    text-align: center;
+    font-size: 200%;
+}
+textarea{
     background-color: #d1d5f0;
-    width: 100vh;
+    width: 30rem;
+    height: 10rem;
+    border: none;
+    border-radius: 1.5vh;
+    margin: 0.5rem;
+    outline: none;
+
+}
+
+input {
+    background-color: #d1d5f0;
+    width: 30rem;
     border: none;
     border-radius: 1.5vh;
     margin: 0.5rem;
     outline: none;
 }
-.itens_cadastro{
-    margin: 2rem;
-}
+
 .itens_cadastro input{
-    height: 4vh;
-    gap: 4vh;
+    height: 3rem;
+    gap: 4rem;
 }
-.img #capa_livro{
+
+.imagem #capa_livro{
     width: 20vw;
     max-width: 70vh;
     max-height: 50vh;
 }
-.itens_left p{
-    font-size: 2rem;
-}
+
 .selector{
-    margin: 2rem;
+    margin: 0.5rem;
 }
 .selector #seletor{
-    width: 47vw;
-    height: 4.3vh;
+    width: 30rem;
+    height: 3rem;
     border-radius: 1rem;
+    background-color: #d1d5f0;
+    border-color: #d1d5f0;
 }
+
 .btn_cadastrar{
     display: flex;
     justify-content: center;
@@ -64,22 +148,26 @@ input{
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 4vh;
+    height: 3rem;
     width: 12vw;
 }
-button{
+
+.cadastrar{
     color: aliceblue;
     background-color: #664caf;
     border-radius: 2rem;
     border: none;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
 }
+
+
 .sinopse input{
     height: 17vh;
 }
+
 .sinopse{
-    margin: 2rem;
+    margin: 0.5rem;
 }
 
 .file-upload-form {
@@ -88,13 +176,15 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 14rem;
+    margin-top: 1rem;
   }
   .file-upload-label input {
     display: none;
   }
   .file-upload-label svg {
     height: 50px;
-    fill: rgb(82, 82, 82);
+    fill: black;
     margin-bottom: 20px;
   }
   .file-upload-label {
@@ -102,8 +192,8 @@ button{
     background-color: #ddd;
     padding: 30px 70px;
     border-radius: 40px;
-    border: 2px dashed rgb(82, 82, 82);
-    box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+    border: 2px dashed ;
+    box-shadow: 0px 0px 200px -50px #654cae;
   }
   .file-upload-design {
     display: flex;
@@ -111,16 +201,26 @@ button{
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 17vw;
+    width: 10rem;
+    height: 20rem;
   }
   .browse-button {
-    background-color: rgb(82, 82, 82);
+    background-color: #654cae;
     padding: 5px 15px;
     border-radius: 10px;
     color: white;
     transition: all 0.3s;
   }
   .browse-button:hover {
-    background-color: rgb(14, 14, 14);
+    background-color: black;
   }
   
+
+
+
+
+
+
+
+
+ 

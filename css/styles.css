@@ -15,10 +15,14 @@ button{
     font-size: 1.3rem;
 }
 button:hover{
-    background-color: white;
+    background-color: aliceblue;
     color: #664CAF;
 }
 
+footer:hover{
+    background-color: #654cae;
+    color: #f0f8ff;
+}
 header {
     width: 100%;
     padding: 1,5rem;
@@ -55,7 +59,7 @@ header {
     text-decoration: none;
 }
 .nav-item a:hover{
-    background-color: white;
+    background-color: aliceblue;
     color: #664caf;
     border-bottom: solid #664caf;
 }   
@@ -65,14 +69,17 @@ header {
     gap: 48px;
 }
 footer {
-    background-color: var(--color-primary-2);
+    background-color: aliceblue;
+    margin-top: 1rem;
 }
+
 #footer_items {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0px 8% 24px 8%;
     align-items: center;
 }
+
 
 #copyright {
     color: aliceblue;

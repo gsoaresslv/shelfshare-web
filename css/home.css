@@ -84,14 +84,15 @@ header img{
     background-color: aliceblue;
     color: #654cae;
     border: #654cae;
-    padding-right: 20%;
+    padding-right: 19%;
 }
 
 .menu button svg {
-    margin-left: 9rem;
+    margin-left: 4rem;
     width: 2rem; /* Aumenta o tamanho dos ícones */
     height: 2rem; /* Aumenta o tamanho dos ícones */
   }
+
 
 .home {
     padding: 2%;

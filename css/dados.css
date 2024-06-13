@@ -17,10 +17,12 @@ header img{
     margin-top: 4rem;
 }
 .logo{
+    margin-left: 6rem;
     width: 100%;
 }
 
 .menu {
+    margin-left: 23rem;
     width: 100%;
     font-size: 100%;
 
@@ -47,14 +49,14 @@ header img{
 .esquerda{
     width: 50%;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 7%;
 }
 
 .direita{
     width: 50%;
     text-align: center;
     font-size: 100%;
-    margin-top: 8%;
+    margin-top: 7%;
     margin-right: 13%;
 }
 
