@@ -80,6 +80,14 @@ footer {
     align-items: center;
 }
 
+#footer_items p{
+    color: #664CAF;
+    font-weight: 500;
+}
+#footer_items:hover p{
+    color: white;
+}
+
 
 #copyright {
     color: aliceblue;
