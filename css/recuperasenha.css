@@ -1,3 +1,4 @@
+/* Definindo estilo de todo o corpo da tela*/
 body {
     font-family: Arial, sans-serif;
     background-color: aliceblue;
@@ -9,7 +10,7 @@ body {
     margin-top: 10rem;
   
 }
-
+/* Definindo estilo e tamanho da imagem*/
 img {
     width: 9rem;
     height: 9rem;
@@ -26,13 +27,13 @@ img {
     margin-bottom: 1rem;
   
   }
-  
+  /* Definindo estilo do label*/
   label {
     display: block;
     font-size: 1.2rem;
     text-align: center;
   }
-  
+  /* Definindo estilo e tamanho para os inputs*/
   input {
     width: 20rem;
     padding: 1rem;
@@ -41,7 +42,7 @@ img {
     margin-top: 0.3rem;
 
   }
-  
+  /* Definindo estilo e tamanho para os botões*/
   button {
     margin-top: 1rem;
     width: 8rem;
@@ -53,7 +54,7 @@ img {
     border: none;
      
   }
-  
+  /* Definindo estilo após acessar o botão*/
   button:hover {
     background-color: #3e3a63;
   }
@@ -65,7 +66,8 @@ img {
   .confirmar{
     margin-top: 2rem;
   }
-a{
+  /* Definindo estilo da tag a*/
+  a{
   text-decoration: none;
   color: white;
-}
+  }

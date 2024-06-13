@@ -1,29 +1,35 @@
+/* Definindo estilo para toda a tela*/
 html {
     font-size: 1rem;
 }
+/* Definindo estilo para tudo que pertence ao container*/
 .container{
     max-width: 70rem;
     margin: 0 auto;
     padding: 0 1.25rem;
 }
+/* Definindo padrão de centro*/
 .center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+/* Definindo estilo para o corpo da tela*/
 body {
     font-family: 'Inter', sans-serif;
     background-color: #d1caed;
     color: #333;
     line-height: 1.6;
 }
+/* Definindo estilo e tamanho para imagem*/
 img {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     box-shadow: 0 0.312rem 0.624rem rgba(0,0,0,0.1);
 }
+/* Definindo estilo dos atributos*/
 h1 {
     font-size: 2.5rem; 
     color: #664caf;

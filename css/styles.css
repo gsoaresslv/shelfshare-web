@@ -1,9 +1,11 @@
+/* Importando fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 *{
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+/* Definido estilo para o botão*/
 button{
     text-decoration: none;
     color: white;
@@ -18,11 +20,12 @@ button:hover{
     background-color: aliceblue;
     color: #664CAF;
 }
-
+/* Definido estilo após passar o mouse*/
 footer:hover{
     background-color: #654cae;
     color: #f0f8ff;
 }
+/* Definido estilo do header*/
 header {
     width: 100%;
     padding: 1,5rem;
@@ -31,18 +34,19 @@ header {
     background-color: var(--color-primary-1);
     z-index: 3;
 }
-
+/* Definido local da navbar*/
 #navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+/* Definido estilo da logo que pertence ao navbar*/
 #nav_logo {
     font-size: 24px;
     color: var(--color-primary-6);
 }
+/* Definido estilo da tag a que pertence a nav */
 .nav-item-active a{
     font-size: 1.5rem;
     background-color: var(--color-neutral-2);
@@ -68,6 +72,7 @@ header {
     list-style: none;
     gap: 48px;
 }
+/* Definido  estilo para o footer*/
 footer {
     background-color: aliceblue;
     margin-top: 1rem;

@@ -1,53 +1,48 @@
+/* Definido  estilo para toda tela*/
 * {
-    margin: 0.2rem;/* define a margem*/
-    padding: 0; /* define o espaçamento*/
-    box-sizing: border-box; /* define o tamanho da caixa*/
+    margin: 0.2rem;
+    padding: 0; 
+    box-sizing: border-box; 
 }
-
-
+/* Definido  estilo e local para o header*/
 header{
    
-    text-align: center;/* Centraliza o header na página */
-    font-family: Georgia,sans-serif; /*Define a fonte */
-    color: #664caf;/*Define a cor */
+    text-align: center;
+    font-family: Georgia,sans-serif; 
+    color: #664caf;
 }
-
+/* Definido estilo para todo o corpo da tela*/
 body {
-    font-family: Helvetica, sans-serif; /*Define a fonte do body*/
-    background-color: #fff;/*Define a cor de fundo do body*/
+    font-family: Helvetica, sans-serif; 
+    background-color: #fff;
 }
-
-
+/* Definido estilo para todo section*/
 section {
-    max-width: 40rem; /* Define a largura máxima da seção */
-    margin: 2rem auto; /* Centraliza a seção na página */
-    padding: 2rem; /* Adiciona espaçamento interno */
-    background-color: #fff; /* Cor de fundo */
-    border-radius: 1rem; /* Adiciona cantos arredondados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+    max-width: 40rem; 
+    margin: 2rem auto;
+    padding: 2rem; 
+    background-color: #fff; 
+    border-radius: 1rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
-
-
 
 section p {
     text-align: justify;
     line-height: 1.6; 
 }
-
+/* Definido localização para os itens do no container*/
 .container {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
-    
-
+/* Definido  estilo para o footer*/
 footer {
-    background-color: #fff; /* Cor de fundo do footer */
-    color: #664caf; /* Cor do texto do footer */
-    text-align: center; /* Alinhamento do texto no centro */
-    padding: 1rem; /* Espaçamento interno*/
-    position: fixed; /* Fixa o footer na parte inferior */
+    background-color: #fff;
+    color: #664caf; 
+    text-align: center; 
+    padding: 1rem;
+    position: fixed; 
     left: 0;
-    width: 100%; /* Largura total */
-    border-top: 0.0625rem solid #ddd; /* Linha superior */
+    width: 100%; 
+    border-top: 0.0625rem solid #ddd;
 }

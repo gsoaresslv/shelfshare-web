@@ -1,11 +1,14 @@
+/* Definindo estilo para toda a tela*/
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+/* Definindo estilo para todo o corpo da tela*/
 body {
     background-color: aliceblue;
 }
+/* Definindo estilo, tamanhos e localização para imagem*/
 .img{
     width: 100%;
     height: 5rem;
@@ -15,23 +18,24 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+/* Definindo estilo para imagem que pertence ao header*/
 header img{
     width: 20rem;
     margin-top: 4rem;
 }
+/* Definindo local e tamanho da logo*/
 .logo{
     margin-left: 8rem;
     width: 100%;
 }
-
+/* Definindo local e tamanho do menu*/
 .menu {
     width: 100%;
     font-size: 100%;
     margin-left: 26rem;
 
 }
-
+/* Definindo estilo e tamanho dos botãos que pertencem ao menu*/
 .menu button{
     font-size: 100%;
     width: 10%;
@@ -42,18 +46,19 @@ header img{
 }
 
 .menu button svg {
-    width: 2rem; /* Aumenta o tamanho dos ícones */
-    height: 2rem; /* Aumenta o tamanho dos ícones */
+    width: 2rem; 
+    height: 2rem; 
   }
-
+/* Definindo local do h1*/
 h1 {
     text-align: center;
     margin-top: 4rem;
 }  
-
+/* Definindo tamanho para as imagens*/
 .imagens {
     max-width: 2,25rem;
 }
+/* Definindo estilo dos atributos para a screen*/
 @media screen and (max-width: 600px) {
     #footer_items {
         flex-direction: column;
@@ -70,7 +75,7 @@ h1 {
 }
 .tamanhosection div{
     
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +87,7 @@ h1 {
     padding: 0;
     margin-left: 1rem;
 }
-
+/* Definindo estilo, localização e tamanho para o título dos livros*/
 figcaption{
     text-align: center;
     margin-top: 3%;
@@ -91,7 +96,7 @@ figcaption{
 }
 
 
-  /* CSS para centralizar as imagens, adicionar borda redonda e centralizar o texto */
+  /* Definindo estilo para o section */
 
   .tamanhosection { 
     display: flex;
@@ -102,10 +107,10 @@ figcaption{
   }   
  
  .tamanhosection .imagens {
-    border-radius: 5%;  /*Bordas redondas  */
-    width: 80%; /* Ajusta o tamanho da imagem  */
-    height: 80%; /* Ajusta o tamanho da imagem  */
-    object-fit: cover; /* Garante que a imagem cobre totalmente o container  */
-    margin-bottom: 3%; /* Espaço entre a imagem e o texto  */
+    border-radius: 5%;  
+    width: 80%; 
+    height: 80%;
+    object-fit: cover; 
+    margin-bottom: 3%; 
 }
  
