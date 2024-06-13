@@ -1,9 +1,7 @@
 const newfeedback= document.getElementById("new-feedback");
 const btnnewfeedback= document.getElementById("btn-new-feedback");
-btnnewfeedback.addEventListener("click", function() {displayElement(newfeedback)});
 
 function displayElement(elementId) {
-    console.log("????????")
     var id = document.getElementById(elementId);
     id.style.display = "flex";
 }
