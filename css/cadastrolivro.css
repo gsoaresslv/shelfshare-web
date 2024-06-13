@@ -176,7 +176,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 14rem;
+    margin-left: 20rem;
     margin-top: 1rem;
   }
   .file-upload-label input {
