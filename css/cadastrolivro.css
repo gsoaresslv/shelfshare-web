@@ -58,9 +58,14 @@ header img {
 
 /* Definindo local da div para esquerda */
 .esquerda {
-    width: 50%;
+    width: 100%;
     text-align: center;
     margin-top: 4%;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 /* Definindo local da div para direita */
@@ -181,8 +186,8 @@ input:focus {
 .btn_cadastrar button {
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
+    text-align: center;
     height: 3rem;
     width: 12vw;
 }
@@ -205,50 +210,32 @@ input:focus {
 .sinopse {
     margin: 0.5rem;
 }
-
-/* Definindo css para o upload da imagem */
-.file-upload-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ajuste a altura conforme necessário */
-}
-
 .file-upload-form {
-    width: fit-content;
-    display: flex;
-    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 6vh 6vh;
+    border-radius: 40px;
+    border: 2px dashed rgb(82, 82, 82);
+    box-shadow: 0px 0px 200px -50px #654cae;
+    width: 30%;
+    height: 30vh;
+    margin-top: 4vh;
 }
-
 .file-upload-label input {
     display: none;
 }
-
 .file-upload-label svg {
     height: 50px;
-    fill: black;
+    fill: #654cae;
     margin-bottom: 20px;
 }
-
-.file-upload-label {
-    cursor: pointer;
-    background-color: #ddd;
-    padding: 30px 70px;
-    border-radius: 40px;
-    border: 2px dashed;
-    box-shadow: 0px 0px 200px -50px #654cae;
-}
-
 .file-upload-design {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 10rem;
-    height: 20rem;
 }
-
 .browse-button {
     background-color: #654cae;
     padding: 5px 15px;
@@ -256,7 +243,7 @@ input:focus {
     color: white;
     transition: all 0.3s;
 }
-
 .browse-button:hover {
-    background-color: black;
+    background-color: rgb(14, 14, 14);
 }
+  
