@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
 }
+/* Definindo estilo do botão*/
 .btn-primary{
     background-color: #664CAF;
     color: white;
@@ -12,19 +13,23 @@
     padding: 2%;
     width: 90%;
 }
+/* Definindo estilo do botão após passar o mouse*/
 .btn-primary:hover{
     background-color: white;
     color: #664CAF;
     border: solid 1px #664CAF;
 }
+/* Definindo estilo do botão após o click*/
 .btn-primary:active{
     background-color: #664CAF;
     color: white;
 }
+/* Definindo estilo do botão enquanto ele está focado*/
 .btn-primary:focus{
     background-color: #664CAF;
     color: white;
 }
+/* Definindo o estilo da tag a para texto*/
 a{
     text-decoration: none;
     color: white;
@@ -35,10 +40,12 @@ a{
     font-weight: 500;
     font-size: 1.3rem;
 }
+/* Definindo estilo da tag a após passa o mouse em cima*/
 a:hover{
     background-color: white;
     color: #664CAF;
 }
+/* Definindo estilo para o login*/
 .right-login{
     width: 50vw;
     height: 100vh;
@@ -58,6 +65,7 @@ a:hover{
     border-bottom-right-radius: 3%;
     border-top-right-radius: 3%;
 }
+/* Definindo estilo para o card*/
 .card{
     display: flex;
     width: 60%;
@@ -67,21 +75,25 @@ a:hover{
     border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+/* Definindo localização do textfild*/
 .textfield{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
+/* Definindo estilo do label que pertece ao textfield*/
 .textfield label{
     font-size: 1.2rem;
     font-weight: 500;
     color: #664CAF;
 }
+/* Definindo tamanhos máximos da imagem*/
 .imgback{
     max-width: 30%;
     max-height: 30%;
 }
+/* Definindo estilos, tamanho e localização dos atributos que pertecem ao card*/
 .card-head{
     display: flex;
     padding: 6%;
@@ -113,6 +125,7 @@ a:hover{
     margin: 3%;
     width: 80%;
 }
+/* Definindo estilo do form e seus atributos*/
 .form-check{
     margin-bottom: 2%;
 }
