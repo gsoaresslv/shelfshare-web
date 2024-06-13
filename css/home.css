@@ -497,6 +497,7 @@ figcaption{
     display: flex;
     flex-wrap: wrap;
     margin-top: 2%;
+    margin-bottom: 3rem;
     justify-content: center;
     gap: 1rem; 
   }   
@@ -512,4 +513,15 @@ figcaption{
 .titulo{
     text-align: center;
     margin-top: 4rem;
+}
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.social-media-buttons{
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    justify-content: center;
 }
