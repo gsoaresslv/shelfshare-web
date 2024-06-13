@@ -3,6 +3,7 @@
     margin: 0%;
     padding: 0%;
 }
+
 /*Definido estilo da imagem*/
 .img{
     width: 100%;
@@ -44,6 +45,9 @@ header img{
     width: 2rem; 
     height: 2rem; 
 }
+body{
+    background-color: rgb(249, 251, 253);
+}
 /* Definindo estilo e direção do main*/
 .main{
     display: flex;
@@ -79,7 +83,6 @@ h1{
 .icone{
     font-size: 200%;
     width: 100%;
-    background-color: white;
     color: #654cae;
 }
 
@@ -92,7 +95,6 @@ h1{
 /* Definindo estilo pros ícones*/
 .star{
     margin-top: 1rem;
-    background-color: white;
     color: #654cae;
     margin-right: 3%;
 }
@@ -102,6 +104,7 @@ h1{
 }
 /* Definindo local e tamanos dos dados dos livros cadastrados*/
 .dados{
+
     margin-top: 1rem;
     font-size: 1.3rem;
     margin-left: 1rem;
@@ -159,9 +162,7 @@ h1{
     padding: 0.2% 0.2%;
 }
 
-.genero, .dados {
-    background-color: white;
-}
+
 /* Definindo local do ícone de  chat*/
 .chat{
     margin-left: 99%

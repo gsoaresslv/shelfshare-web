@@ -1,11 +1,12 @@
-/* Definindo tamanhos pata toda a tela*/
-*{
+/* Definindo tamanhos para toda a tela */
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-/* Definindo estilo, tamanho e lugar da imagem*/
-.img{
+
+/* Definindo estilo, tamanho e lugar da imagem */
+.img {
     width: 100%;
     height: 5rem;
     margin: 0 auto;
@@ -14,22 +15,26 @@
     align-items: center;
     justify-content: center;
 }
-/* Definindo tamanho e local para imagem que pertene ao header*/
-header img{
+
+/* Definindo tamanho e local para imagem que pertence ao header */
+header img {
     width: 20rem;
     margin-top: 4rem;
 }
-/* Definindo tamanho para logo*/
-.logo{
+
+/* Definindo tamanho para logo */
+.logo {
     width: 100%;
 }
-/* Definindo tamanho e estilo para o menu*/
+
+/* Definindo tamanho e estilo para o menu */
 .menu {
     width: 100%;
     font-size: 100%;
 }
-/* Definindo estilo e tamanho para o botão que pertene ao header*/
-.menu button{
+
+/* Definindo estilo e tamanho para o botão que pertence ao header */
+.menu button {
     margin-left: 2rem;
     font-size: 100%;
     width: 10%;
@@ -38,67 +43,77 @@ header img{
     border: #654cae;
     padding-right: 20%;
 }
-/* Definindo tamanhos para o atributo svg do menu*/
+
+/* Definindo tamanhos para o atributo svg do menu */
 .menu button svg {
-    width: 2rem; 
+    width: 2rem;
     height: 2rem;
-  }
-/* Definindo local do main na tela*/
-.main{
+}
+
+/* Definindo local do main na tela */
+.main {
     display: flex;
     flex-direction: row;
 }
-/* Definindo local da div para esquerda*/
-.esquerda{
+
+/* Definindo local da div para esquerda */
+.esquerda {
     width: 50%;
     text-align: center;
     margin-top: 4%;
 }
-/* Definindo local da div para esquerda*/
-.direita{
+
+/* Definindo local da div para direita */
+.direita {
     width: 50%;
     text-align: center;
     font-size: 100%;
     margin-top: 3%;
     margin-right: 13%;
 }
-/* Definindo margem dos atributos*/
-label{
+
+/* Definindo margem dos atributos */
+label {
     margin-right: 24rem;
 }
 
-.form-select{
+.form-select {
     margin-top: 0.5rem;
 }
 
-.autor{
-    margin-right: 27rem
-}
-.editora{
-    margin-right: 26rem
-}
-.genero{
-    margin-right: 26rem
+.autor {
+    margin-right: 27rem;
 }
 
-.descricao{
-    margin-right: 25rem
+.editora {
+    margin-right: 26rem;
 }
-/* Definindo estilo e localização da imagem para capa do livro*/
-#capa_livro{
+
+.genero {
+    margin-right: 26rem;
+}
+
+.descricao {
+    margin-right: 25rem;
+}
+
+/* Definindo estilo e localização da imagem para capa do livro */
+#capa_livro {
     justify-content: center;
     width: 40%;
     margin-top: 1rem;
     border-radius: 1rem;
 }
-/* Definindo estilo pro h1*/
-h1{
+
+/* Definindo estilo pro h1 */
+h1 {
     color: #654cae;
     text-align: center;
     font-size: 200%;
 }
-/* Definindo estilo para área de texo*/
-textarea{
+
+/* Definindo estilo para área de texto */
+textarea {
     background-color: #d1d5f0;
     width: 30rem;
     height: 10rem;
@@ -106,9 +121,14 @@ textarea{
     border-radius: 1.5vh;
     margin: 0.5rem;
     outline: none;
-
+    padding: 1rem;
 }
-/* Definindo estilo para os inputs*/
+
+textarea:focus {
+    box-shadow: 1px 1px 3px 3px #b4bbee;
+}
+
+/* Definindo estilo para os inputs */
 input {
     background-color: #d1d5f0;
     width: 30rem;
@@ -116,39 +136,49 @@ input {
     border-radius: 1.5vh;
     margin: 0.5rem;
     outline: none;
+    padding: 1rem;
 }
-/* Definindo estilo para os inputs que pertencem ao cadastro*/
-.itens_cadastro input{
+
+input:focus {
+    box-shadow: 1px 1px 3px 3px #b4bbee;
+}
+
+/* Definindo estilo para os inputs que pertencem ao cadastro */
+.itens_cadastro input {
     height: 3rem;
     gap: 4rem;
 }
-/* Definindo estilo para a capa do livro que pertence a classe de imagens*/
-.imagem #capa_livro{
+
+/* Definindo estilo para a capa do livro que pertence a classe de imagens */
+.imagem #capa_livro {
     width: 20vw;
     max-width: 70vh;
     max-height: 50vh;
 }
-/* Definindo margim a div selector*/
-.selector{
+
+/* Definindo margem à div selector */
+.selector {
     margin: 0.5rem;
 }
-/* Definindo estilo ao seletor que pertence a div selector*/
-.selector #seletor{
+
+/* Definindo estilo ao seletor que pertence à div selector */
+.selector #seletor {
     width: 30rem;
     height: 3rem;
     border-radius: 1rem;
     background-color: #d1d5f0;
     border-color: #d1d5f0;
 }
-/* Definindo estilo ao botão de cadastrar*/
-.btn_cadastrar{
+
+/* Definindo estilo ao botão de cadastrar */
+.btn_cadastrar {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
 
-.btn_cadastrar button{
+.btn_cadastrar button {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -157,7 +187,7 @@ input {
     width: 12vw;
 }
 
-.cadastrar{
+.cadastrar {
     color: aliceblue;
     background-color: #664caf;
     border-radius: 2rem;
@@ -165,41 +195,51 @@ input {
     text-align: center;
     margin: 1rem;
 }
-/* Definindo tamanho para o input da sinopse*/
-.sinopse input{
+
+/* Definindo tamanho para o input da sinopse */
+.sinopse input {
     height: 17vh;
 }
-/* Definindo margem para a div sinopse*/
-.sinopse{
+
+/* Definindo margem para a div sinopse */
+.sinopse {
     margin: 0.5rem;
 }
-/* Definindo css para o upload da imagem*/ 
+
+/* Definindo css para o upload da imagem */
+.file-upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+}
+
 .file-upload-form {
     width: fit-content;
-    height: fit-content;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20rem;
     margin-top: 1rem;
-  }
-  .file-upload-label input {
+}
+
+.file-upload-label input {
     display: none;
-  }
-  .file-upload-label svg {
+}
+
+.file-upload-label svg {
     height: 50px;
     fill: black;
     margin-bottom: 20px;
-  }
-  .file-upload-label {
+}
+
+.file-upload-label {
     cursor: pointer;
     background-color: #ddd;
     padding: 30px 70px;
     border-radius: 40px;
-    border: 2px dashed ;
+    border: 2px dashed;
     box-shadow: 0px 0px 200px -50px #654cae;
-  }
-  .file-upload-design {
+}
+
+.file-upload-design {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,24 +247,16 @@ input {
     gap: 5px;
     width: 10rem;
     height: 20rem;
-  }
-  .browse-button {
+}
+
+.browse-button {
     background-color: #654cae;
     padding: 5px 15px;
     border-radius: 10px;
     color: white;
     transition: all 0.3s;
-  }
-  .browse-button:hover {
+}
+
+.browse-button:hover {
     background-color: black;
-  }
-  
-
-
-
-
-
-
-
-
- 
+}

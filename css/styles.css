@@ -16,10 +16,7 @@ button{
     font-weight: 500;
     font-size: 1.3rem;
 }
-button:hover{
-    background-color: aliceblue;
-    color: #664CAF;
-}
+
 /* Definido estilo após passar o mouse*/
 footer:hover{
     background-color: #654cae;
