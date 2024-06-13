@@ -217,11 +217,10 @@ header{
 html {
     scroll-behavior: smooth;
 }
-
+/* Definindo cor para todo o corpo da imagem*/
 body {
     background-color: var(--color-primary-1);
 }
-
 section {
     padding: 3vh 8%;
 }
