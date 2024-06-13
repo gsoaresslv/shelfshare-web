@@ -1,9 +1,10 @@
+/* Definindo tamanhos pata toda a tela*/
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-
+/* Definindo estilo, tamanho e lugar da imagem*/
 .img{
     width: 100%;
     height: 5rem;
@@ -13,21 +14,21 @@
     align-items: center;
     justify-content: center;
 }
-
+/* Definindo tamanho e local para imagem que pertene ao header*/
 header img{
     width: 20rem;
     margin-top: 4rem;
 }
+/* Definindo tamanho para logo*/
 .logo{
     width: 100%;
 }
-
+/* Definindo tamanho e estilo para o menu*/
 .menu {
     width: 100%;
     font-size: 100%;
-
 }
-
+/* Definindo estilo e tamanho para o botão que pertene ao header*/
 .menu button{
     margin-left: 2rem;
     font-size: 100%;
@@ -37,22 +38,23 @@ header img{
     border: #654cae;
     padding-right: 20%;
 }
-
+/* Definindo tamanhos para o atributo svg do menu*/
 .menu button svg {
-    width: 2rem; /* Aumenta o tamanho dos ícones */
-    height: 2rem; /* Aumenta o tamanho dos ícones */
+    width: 2rem; 
+    height: 2rem;
   }
-
-  .main{
+/* Definindo local do main na tela*/
+.main{
     display: flex;
     flex-direction: row;
 }
+/* Definindo local da div para esquerda*/
 .esquerda{
     width: 50%;
     text-align: center;
     margin-top: 4%;
 }
-
+/* Definindo local da div para esquerda*/
 .direita{
     width: 50%;
     text-align: center;
@@ -60,7 +62,7 @@ header img{
     margin-top: 3%;
     margin-right: 13%;
 }
-
+/* Definindo margem dos atributos*/
 label{
     margin-right: 24rem;
 }
@@ -82,19 +84,20 @@ label{
 .descricao{
     margin-right: 25rem
 }
-
+/* Definindo estilo e localização da imagem para capa do livro*/
 #capa_livro{
     justify-content: center;
     width: 40%;
     margin-top: 1rem;
     border-radius: 1rem;
 }
-
+/* Definindo estilo pro h1*/
 h1{
     color: #654cae;
     text-align: center;
     font-size: 200%;
 }
+/* Definindo estilo para área de texo*/
 textarea{
     background-color: #d1d5f0;
     width: 30rem;
@@ -105,7 +108,7 @@ textarea{
     outline: none;
 
 }
-
+/* Definindo estilo para os inputs*/
 input {
     background-color: #d1d5f0;
     width: 30rem;
@@ -114,21 +117,22 @@ input {
     margin: 0.5rem;
     outline: none;
 }
-
+/* Definindo estilo para os inputs que pertencem ao cadastro*/
 .itens_cadastro input{
     height: 3rem;
     gap: 4rem;
 }
-
+/* Definindo estilo para a capa do livro que pertence a classe de imagens*/
 .imagem #capa_livro{
     width: 20vw;
     max-width: 70vh;
     max-height: 50vh;
 }
-
+/* Definindo margim a div selector*/
 .selector{
     margin: 0.5rem;
 }
+/* Definindo estilo ao seletor que pertence a div selector*/
 .selector #seletor{
     width: 30rem;
     height: 3rem;
@@ -136,13 +140,14 @@ input {
     background-color: #d1d5f0;
     border-color: #d1d5f0;
 }
-
+/* Definindo estilo ao botão de cadastrar*/
 .btn_cadastrar{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
+
 .btn_cadastrar button{
     display: flex;
     justify-content: center;
@@ -160,16 +165,15 @@ input {
     text-align: center;
     margin: 1rem;
 }
-
-
+/* Definindo tamanho para o input da sinopse*/
 .sinopse input{
     height: 17vh;
 }
-
+/* Definindo margem para a div sinopse*/
 .sinopse{
     margin: 0.5rem;
 }
-
+/* Definindo css para o upload da imagem*/ 
 .file-upload-form {
     width: fit-content;
     height: fit-content;
