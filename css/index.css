@@ -305,9 +305,11 @@ section {
     gap: 48px;
 }
 
-#testimonial_chef {
-    width: 500px;
+#testimonial_img {
+    width: 80vh;
     height: auto;
+    border-radius: 0 4rem 4rem 0;
+    margin-right: 11rem;
 }
 
 #testimonials .section-subtitle {
