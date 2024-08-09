@@ -6,10 +6,10 @@
 }
 /* Definido  estilo e local para o header*/
 header{
-   
     text-align: center;
     font-family: Georgia,sans-serif; 
     color: #664caf;
+    margin: 3rem;
 }
 /* Definido estilo para todo o corpo da tela*/
 body {
@@ -33,7 +33,7 @@ section p {
 /* Definido localização para os itens do no container*/
 .container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 /* Definido  estilo para o footer*/
 footer {
