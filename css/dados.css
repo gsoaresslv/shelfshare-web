@@ -1,175 +1,149 @@
-/*Definindo estilo pra toda tela*/
-*{ 
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
 }
 
-/*Definido estilo da imagem*/
-.img{
-    width: 100%;
-    height: 5rem;
-    margin: 0 auto;
-    background-color: #654cae;
+body {
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    background-color: #dddddd;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo no topo, evitando que a navbar suma */
+    flex-direction: column; /* Organiza a navbar e o conteúdo principal verticalmente */
 }
-/*Definindo estilo da imagem que pertece ao header*/
-header img{
-    width: 20rem;
-    margin-top: 4rem;
-}
-/* Definindo estilo para logo*/
-.logo{
-    margin-left: 6rem;
-    width: 100%;
-}
-/* Definindo tamanhos do menu*/
-.menu {
-    margin-left: 23rem;
-    width: 100%;
-    font-size: 100%;
 
-}
-/* Definindo estilo do botão que pertence ao menu*/
-.menu button{
-    font-size: 100%;
-    width: 10%;
-    background-color: #654cae;
-    color: white;
-    border: #654cae;
-    padding-right: 20%;
-}
-/* Definindo tamanho dos ícones do menu*/
-.menu button svg {
-    width: 2rem; 
-    height: 2rem; 
-}
-body{
-    background-color: rgb(249, 251, 253);
-}
-/* Definindo estilo e direção do main*/
-.main{
+.main-container {
+    width: 90%; /* Largura reduzida para 90% */
     display: flex;
-    flex-direction: row;
-}
-/* Definindo estilo dos itens da div que pertence ao lado esquerdo*/
-.esquerda{
-    width: 50%;
-    text-align: center;
-    margin-top: 7%;
-}
-/* Definindo estilo dos itens da div que pertence ao lado direito*/
-.direita{
-    width: 50%;
-    text-align: center;
-    font-size: 100%;
-    margin-top: 7%;
-    margin-right: 13%;
-}
-/* Definindo localização da imagem*/
-#fotoimg{
-    justify-content: center;
-    width: 40%;
-    margin-top: 1rem;
-}
-/* Definindo estilo do h1*/
-h1{
-    color: #654cae;
-    text-align: center;
-    font-size: 200%;
-}
-/* Definindo estilo e tamanho dos ícones*/
-.icone{
-    font-size: 200%;
-    width: 100%;
-    color: #654cae;
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    margin: 3rem auto; /* Centraliza o container no centro da página */
 }
 
-.icone svg{
-    margin-right: 16%;
-    margin-left: 16%;
-    width: 2rem; 
-    height: 1.5rem;
-}
-/* Definindo estilo pros ícones*/
-.star{
-    margin-top: 1rem;
-    color: #654cae;
-    margin-right: 3%;
-}
-.star svg{
-    width: 1rem; 
-    height: 1.5rem; 
-}
-/* Definindo local e tamanos dos dados dos livros cadastrados*/
-.dados{
-
-    margin-top: 1rem;
-    font-size: 1.3rem;
-    margin-left: 1rem;
-    text-align: initial;
+.main {
+    width: 100%; /* Define largura total dentro do container */
+    display: flex;
+    justify-content: space-between; /* Espaça a coluna esquerda e direita */
+    align-items: flex-start; /* Alinha os itens no topo */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 95%; /* Define uma largura máxima */
+    border: 1px solid #ccc; /* Borda ao redor do main */
+    border-radius: 20px; /* Arredondamento das bordas */
+    background-color: #f2f2f2; /* Fundo claro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
 }
 
-.atributos{
-    text-align: initial;
-    font-size: 1.2rem;  
-}
-
-.genero{
-    text-align: justify;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-    font-size: 1.2rem;  
-}
-
-.sinopse{
-    text-align: justify;
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-    font-size: 1.2rem;  
-}
-/* Definindo local do card*/
-.cards {
+/* Coluna esquerda */
+.esquerda {
+    width: 40vw; /* Corrigido para 40vw para melhor adaptação ao layout */
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: center; 
+    margin-left: 4rem;
 }
-/* Definindo estilo do card*/
-.card {
-    border: 1px solid #654cae;
-    border-radius: 1rem;
-    overflow: hidden;
+
+/* Coluna direita */
+.direita {
+    width: 50%;
+    font-size: 100%;
+    margin-top: 4%; /* Espaço extra acima da coluna direita */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+img {
+    width: 20vw;
+    height: auto; /* Mantém a proporção correta da imagem */
+}
+
+.icons {
+    margin-top: 1rem;
+    display: flex; /* Ícones lado a lado */
+    gap: 2rem; /* Espaço entre os ícones */
+    align-items: center; /* Alinhamento vertical dos ícones */
+}
+
+.icons svg {
+    fill: #301c6e; /* Cor dos ícones */
+    width: 2vw; /* Largura dos ícones */
+    height: 2.5vh; /* Altura dos ícones */
+    cursor: pointer; /* Mudança do cursor ao passar o mouse */
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Estilos do carrossel */
+.carousel-container {
     width: 100%;
-    padding: 1.5%;
-}
-/* Definindo estilo e tamanho dos itens que pertencem ao card*/
-.card h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0.2rem;
-    color: #654cae;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
-.card p {
-    padding: 0.2rem;
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transição suave para as animações do carrossel */
+    width: 100%; /* O carrossel ocupa toda a largura do container */
+}
+
+.item {
+    min-width: 220px; /* Largura mínima de cada item */
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 8px; /* Arredonda as bordas dos itens */
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra nos itens */
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 16px;
     color: #333;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-}
-/* Definindo tamanhos e estilo dos atributos*/
-.atributos div {
-    padding: 0.2% 0.2%;
 }
 
-
-/* Definindo local do ícone de  chat*/
-.chat{
-    margin-left: 99%
+.prev, .next {
+    background-color: #fff; /* Fundo branco dos botões */
+    border: none; /* Remove a borda padrão */
+    font-size: 24px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de clique */
+    padding: 10px;
+    position: absolute; /* Posição absoluta para fixar os botões nas extremidades */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza os botões verticalmente */
+    z-index: 100; /* Garante que os botões fiquem sobre o conteúdo */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
 }
-/* Definindo estilo e tamanho do ícone de chat*/
-.chat svg{
-    width: 2.5rem;
-    height: 10rem;
-    color: #654cae; 
+
+.prev {
+    left: 0; /* Botão anterior na esquerda */
+}
+
+.next {
+    right: 0; /* Botão próximo na direita */
+}
+
+.prev:hover, .next:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
 }

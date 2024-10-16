@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dados.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="dados.js" defer></script> <!-- JavaScript externo -->
+    <title>Dados do Livros</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <h2>Shelfshare</h2>
+                <div class="buscar-box">
+                    <div class="input-buscar">
+                        <input type="text" placeholder="Faça uma busca">
+                    </div>
+                    <div class="lupa-buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>    
+                    </div>
+                </div>
+                <div class="icones">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </div> 
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="main">
+            <div class="esquerda">
+                <div class="product-image">
+                    <img id="main-image" src="img/assim-acaba.png" alt="livro principal">
+                </div>
+
+                <div class="thumbnails">
+                    <img src="img/frente-assim-que-acaba.jpeg" alt="Frente" onclick="trocarImagem('img/frente-assim-que-acaba.jpeg')" />
+                    <img src="img/capa_assim_que_acaba.jpeg" alt="Capa" onclick="trocarImagem('img/capa_assim_que_acaba.jpeg')" />
+                    <img src="img/assim-acaba.png" alt="Livro" onclick="trocarImagem('img/assim-acaba.png')" />
+                </div>
+                
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="salvar" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="compartilhar" viewBox="0 0 16 16">
+                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="direita">
+                <div class="dados">
+                    <h2>É Assim que Acaba</h2>
+                    <p>Autor(a): Collen Hoover<br>
+                    Editora: Grupo Editorial Record<br>
+                    Páginas: 368<br>
+                    Data da primeira publicação: 2 de agosto de 2016<br>
+                    Seguido por: É Assim Que Começa<br>
+                    Gêneros: Romance de amor, Ficção, Romance contemporâneo</p>
+                </div>
+
+                <div class="sinopse">
+                    <h2>Sinopse</h2>
+                    <p>O romance mais pessoal da carreira de Colleen Hoover, É assim que acaba discute temas como violência doméstica e abuso psicológico de forma sensível e direta.
+                    Em É assim que acaba, Colleen Hoover nos apresenta Lily, uma jovem que se mudou de uma cidadezinha do Maine para Boston, se formou em marketing e abriu a própria floricultura. 
+                    E é em um dos terraços de Boston que ela conhece Ryle, um neurocirurgião confiante, teimoso e talvez até um pouco arrogante, com uma grande aversão a relacionamentos, mas que se sente muito atraído por ela.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <h2>Você também pode gostar disso</h2>
+        <div class="carousel">
+            <button class="prev">❮</button>
+            <div class="carousel-items">
+                <!-- Modificando aqui para garantir que todas as imagens tenham a mesma estrutura e tamanho -->
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/ladofeio.jpg" alt="livro 2">
+                    </div>
+                    <p>livro - Verity</p>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/coraline.jpg" alt="livro 3">
+                    </div>
+                    <p>livro - A Hipótese do Amor</p>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/novembro_9.jpg" alt="livro 4">
+                    </div>
+                    <p>livro - Todas as suas imperfeições</p>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/ladofeio.jpg" alt="livro 2">
+                    </div>
+                    <p>livro - Verity</p>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/coraline.jpg" alt="livro 3">
+                    </div>
+                    <p>livro - A Hipótese do Amor</p>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/novembro_9.jpg" alt="livro 4">
+                    </div>
+                    <p>livro - Todas as suas imperfeições</p>
+                </div>
+            </div>
+            <button class="next">❯</button>
+        </div>
+    </div>
+
+</body>
+</html>
