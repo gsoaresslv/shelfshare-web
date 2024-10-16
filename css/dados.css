@@ -60,6 +60,7 @@ img {
 
 .icons {
     margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex; /* Ícones lado a lado */
     gap: 2rem; /* Espaço entre os ícones */
     align-items: center; /* Alinhamento vertical dos ícones */
@@ -72,9 +73,42 @@ img {
     cursor: pointer; /* Mudança do cursor ao passar o mouse */
 }
 
+
+.dados h2,
+.sinopse h2 {
+    color: black;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0; /* Remove a margem padrão */
+    margin-top: 10%;
+}
+
+.dados p,
+.sinopse p {
+    text-align: justify; /* Justifica o texto dos parágrafos */
+    margin: 0; /* Remove a margem padrão para o parágrafo */
+    padding-top: 1rem; /* Adiciona um pequeno espaço entre o título e o parágrafo */
+}
+
+.botao button {
+    margin-top: 2rem;
+    background-color: #301c6e; /* Cor roxa */
+    color: white; /* Texto branco para contraste */
+    width: 100%; /* Deixa o botão ocupar toda a largura disponível */
+    padding: 15px 0; /* Altura do botão */
+    border: none; /* Remove as bordas */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Mostra o ícone de "mãozinha" ao passar o mouse */
+}
+
+.botao button:hover {
+    background-color: #271a54; /* Cor ligeiramente mais escura ao passar o mouse */
+}
+
+
 .thumbnails img {
-    width: 80px;
-    height: 80px;
+    max-width: 3rem; /* ou qualquer largura desejada */
+    height: auto; /* Mantém a proporção */
     margin: 5px;
     cursor: pointer;
 }
@@ -82,13 +116,14 @@ img {
 /* Estilos do carrossel */
 .carousel-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 170vh;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
 .carousel {
+    margin-top: 2rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -104,7 +139,7 @@ img {
 .item {
     min-width: 220px; /* Largura mínima de cada item */
     margin: 0 10px;
-    background-color: #fff;
+    background-color: #f2f2f2;
     border-radius: 8px; /* Arredonda as bordas dos itens */
     padding: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra nos itens */
@@ -112,10 +147,12 @@ img {
 }
 
 .item img {
-    width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px;
+    width: 10vw; /* Mantém a largura total do item */
+    height: 25vh; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Corta as imagens para preencher o espaço sem distorção */
+    border-radius: 8px; /* Arredonda as bordas das imagens */
 }
+
 
 .item p {
     margin-top: 10px;
@@ -144,6 +181,7 @@ img {
     right: 0; /* Botão próximo na direita */
 }
 
-.prev:hover, .next:hover {
-    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+
+.carousel-container h2{
+    color: black;
 }

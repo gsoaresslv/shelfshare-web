@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dados.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <script src="dados.js" defer></script> <!-- JavaScript externo -->
+    <script src="js/dados.js" defer></script> <!-- JavaScript externo -->
     <title>Dados do Livros</title>
 </head>
 
@@ -26,6 +26,10 @@
                     </div>
                 </div>
                 <div class="icones">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
                         <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                         <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
@@ -42,24 +46,23 @@
     <div class="main-container">
         <div class="main">
             <div class="esquerda">
-                <div class="product-image">
-                    <img id="main-image" src="img/assim-acaba.png" alt="livro principal">
-                </div>
 
-                <div class="thumbnails">
-                    <img src="img/frente-assim-que-acaba.jpeg" alt="Frente" onclick="trocarImagem('img/frente-assim-que-acaba.jpeg')" />
-                    <img src="img/capa_assim_que_acaba.jpeg" alt="Capa" onclick="trocarImagem('img/capa_assim_que_acaba.jpeg')" />
-                    <img src="img/assim-acaba.png" alt="Livro" onclick="trocarImagem('img/assim-acaba.png')" />
-                </div>
-                
                 <div class="icons">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="salvar" viewBox="0 0 16 16">
-                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                    </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="compartilhar" viewBox="0 0 16 16">
                         <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
                     </svg>
                 </div>
+
+                <div class="product-image">
+                    <img id="main-image" src="img/assim-acaba.jpg" alt="livro principal">
+                </div>
+
+                <div class="thumbnails">
+                    <img src="img/frente-assim-que-acaba.jpg" alt="Frente" onclick="trocarImagem('img/frente-assim-que-acaba.jpeg')" />
+                    <img src="img/pessoa_segurando_livro.png" alt="Capa" onclick="trocarImagem('img/capa_assim_que_acaba.jpeg')" />
+                    <img src="img/assim-acaba.jpg" alt="Livro" onclick="trocarImagem('img/assim-acaba.png')" />
+                </div>
+                 
             </div>
             
             <div class="direita">
@@ -80,6 +83,10 @@
                     E é em um dos terraços de Boston que ela conhece Ryle, um neurocirurgião confiante, teimoso e talvez até um pouco arrogante, com uma grande aversão a relacionamentos, mas que se sente muito atraído por ela.
                     </p>
                 </div>
+
+                <div class="botao">
+                    <button>Salvar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -95,50 +102,100 @@
                         <img src="img/cinco_passos.jpg" alt="livro 1">
                     </div>
                     <p>livro - é assim que começa</p>
-                </div>
-                <div class="item">
-                    <div class="image-wrapper">
-                        <img src="img/ladofeio.jpg" alt="livro 2">
+                    <div class="botao">
+                        <button>Salvar</button>
                     </div>
-                    <p>livro - Verity</p>
-                </div>
-                <div class="item">
-                    <div class="image-wrapper">
-                        <img src="img/coraline.jpg" alt="livro 3">
-                    </div>
-                    <p>livro - A Hipótese do Amor</p>
-                </div>
-                <div class="item">
-                    <div class="image-wrapper">
-                        <img src="img/novembro_9.jpg" alt="livro 4">
-                    </div>
-                    <p>livro - Todas as suas imperfeições</p>
                 </div>
                 <div class="item">
                     <div class="image-wrapper">
                         <img src="img/cinco_passos.jpg" alt="livro 1">
                     </div>
                     <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="image-wrapper">
-                        <img src="img/ladofeio.jpg" alt="livro 2">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
                     </div>
-                    <p>livro - Verity</p>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="image-wrapper">
-                        <img src="img/coraline.jpg" alt="livro 3">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
                     </div>
-                    <p>livro - A Hipótese do Amor</p>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
                 </div>
                 <div class="item">
                     <div class="image-wrapper">
-                        <img src="img/novembro_9.jpg" alt="livro 4">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
                     </div>
-                    <p>livro - Todas as suas imperfeições</p>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
                 </div>
-            </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-wrapper">
+                        <img src="img/cinco_passos.jpg" alt="livro 1">
+                    </div>
+                    <p>livro - é assim que começa</p>
+                    <div class="botao">
+                        <button>Salvar</button>
+                    </div>
+                </div>
             <button class="next">❯</button>
         </div>
     </div>
