@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    margin-left: 4rem;
+    margin-left: 6rem;
 }
 
 /* Coluna direita */
@@ -89,14 +89,14 @@ img {
     padding-top: 1rem; /* Adiciona um pequeno espaço entre o título e o parágrafo */
 }
 
-.botao button {
+.salvar {
     margin-top: 2rem;
     background-color: #301c6e; /* Cor roxa */
     color: white; /* Texto branco para contraste */
     width: 100%; /* Deixa o botão ocupar toda a largura disponível */
-    padding: 15px 0; /* Altura do botão */
+    padding: 3% 0; /* Altura do botão */
     border: none; /* Remove as bordas */
-    border-radius: 5px; /* Bordas levemente arredondadas */
+    border-radius: 3px; /* Bordas levemente arredondadas */
     font-size: 16px; /* Tamanho do texto */
     cursor: pointer; /* Mostra o ícone de "mãozinha" ao passar o mouse */
 }
@@ -131,24 +131,28 @@ img {
 }
 
 .carousel-items {
+    margin-left: 0.5rem;
     display: flex;
     transition: transform 0.5s ease-in-out; /* Transição suave para as animações do carrossel */
     width: 100%; /* O carrossel ocupa toda a largura do container */
 }
 
 .item {
-    min-width: 220px; /* Largura mínima de cada item */
-    margin: 0 10px;
+    min-width: 16rem; /* Largura mínima de cada item */
+    height: 20rem;
+    margin: 1rem;
     background-color: #f2f2f2;
-    border-radius: 8px; /* Arredonda as bordas dos itens */
-    padding: 10px;
+    border-radius: 9px; /* Arredonda as bordas dos itens */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra nos itens */
     text-align: center;
 }
 
 .item img {
-    width: 10vw; /* Mantém a largura total do item */
-    height: 25vh; /* Define uma altura fixa para as imagens */
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 8vw; /* Mantém a largura total do item */
+    height: 15vh; /* Define uma altura fixa para as imagens */
     object-fit: cover; /* Corta as imagens para preencher o espaço sem distorção */
     border-radius: 8px; /* Arredonda as bordas das imagens */
 }
@@ -175,13 +179,82 @@ img {
 
 .prev {
     left: 0; /* Botão anterior na esquerda */
+    border-radius: 50%; /* Para deixá-lo redondo */
+    background-color: transparent; /* Botão transparente */
 }
 
 .next {
-    right: 0; /* Botão próximo na direita */
+    left: 93rem; /* Botão próximo na direita */
 }
 
 
 .carousel-container h2{
     color: black;
+}
+
+.ver-mais{
+    margin-top: 1rem;
+    background-color: #301c6e; /* Cor roxa */
+    color: white; /* Texto branco para contraste */
+    width: 7vw; /* Deixa o botão ocupar toda a largura disponível */
+    padding: 9px 0; /* Altura do botão */
+    border: none; /* Remove as bordas */
+    border-radius: 2px; /* Bordas levemente arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Mostra o ícone de "mãozinha" ao passar o mouse */
+}
+
+footer {
+    background: #301c6e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 0 0 1rem; /* Aumenta o padding inferior para criar espaço */
+    width: 100vw; /* O footer continua ocupando toda a largura da tela */
+    height: auto; /* Deixe o height automático para que o conteúdo defina a altura */
+    margin-top: 1rem;
+}
+
+.medias-socias {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem; /* Diminui o espaço abaixo dos ícones */
+}
+
+.medias-socias i {
+    font-size: 1.3rem; /* Reduz o tamanho dos ícones */
+    border: 0.1rem solid white;
+    padding: 0.5rem; /* Ajusta o padding dos ícones */
+    border-radius: 50%;
+    margin: 0.25rem; /* Reduz o espaço entre os ícones */
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0.5rem 0; /* Diminui o espaço entre os links e o conteúdo do footer */
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem; /* Reduz a distância entre os links */
+    font-size: 1rem; /* Diminui o tamanho da fonte */
+}
+
+.links a:hover {
+    opacity: 0.55;
+}
+
+.copyright {
+    font-size: 0.85rem; /* Diminui o tamanho do texto de copyright */
+    margin-top: 0.5rem; /* Reduz o espaço acima do copyright */
+}
+
+.image-wrapper{
+    background-color: #ededed;
+    height: 14rem;
+    border-radius: 0.5rem;
 }

@@ -5,10 +5,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     let currentIndex = 0; // Índice da imagem atual
+    const itemsToShow = 4; // Número de itens a serem exibidos
 
     function updateCarousel() {
+        // Calcula a quantidade total de miniaturas
+        const totalThumbnails = thumbnails.length;
+
+        // Limita o índice atual para evitar ultrapassar o total
+        if (currentIndex > totalThumbnails - itemsToShow) {
+            currentIndex = totalThumbnails - itemsToShow; // Ajusta se o índice exceder o limite
+        }
+
         // Move o carrossel com base no índice atual
-        carouselItems.style.transform = `translateX(${-currentIndex * 100}%)`;
+        carouselItems.style.transform = `translateX(${-currentIndex * (100 / itemsToShow)}%)`;
     }
 
     thumbnails.forEach((thumbnail, index) => {
