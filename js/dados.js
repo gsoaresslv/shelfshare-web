@@ -1,47 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const thumbnails = document.querySelectorAll('.thumbnails img');
-    const mainImage = document.getElementById('main-image');
-    const carouselItems = document.querySelector('.carousel-items');
+    // Carrossel: Seleciona os botões e os itens do carrossel
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
-    let currentIndex = 0; // Índice da imagem atual
-    const itemsToShow = 4; // Número de itens a serem exibidos
+    const carouselItems = document.querySelector('.carousel-items');
+    const itemWidth = document.querySelector('.item').offsetWidth;
+    let scrollPosition = 0;
 
-    function updateCarousel() {
-        // Calcula a quantidade total de miniaturas
-        const totalThumbnails = thumbnails.length;
-
-        // Limita o índice atual para evitar ultrapassar o total
-        if (currentIndex > totalThumbnails - itemsToShow) {
-            currentIndex = totalThumbnails - itemsToShow; // Ajusta se o índice exceder o limite
+    // Função de rolagem do carrossel
+    nextButton.addEventListener('click', () => {
+        if (scrollPosition < carouselItems.scrollWidth - carouselItems.clientWidth) {
+            scrollPosition += itemWidth + 20; // O valor 20 é a margem entre os itens
+            carouselItems.style.transform = `translateX(-${scrollPosition}px)`;
         }
+    });
 
-        // Move o carrossel com base no índice atual
-        carouselItems.style.transform = `translateX(${-currentIndex * (100 / itemsToShow)}%)`;
-    }
+    prevButton.addEventListener('click', () => {
+        if (scrollPosition > 0) {
+            scrollPosition -= itemWidth + 20;
+            carouselItems.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+    });
 
-    thumbnails.forEach((thumbnail, index) => {
+    // Seleção de miniaturas
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+    const mainImage = document.getElementById('main-image');
+
+    // Evento de clique nas miniaturas
+    thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener('click', function () {
-            currentIndex = index; // Atualiza o índice atual
-            updateCarousel(); // Atualiza o carrossel
-            mainImage.src = this.src; // Atualiza a imagem principal
+            // Obtém o caminho da miniatura clicada
+            const newSrc = this.src;
+            console.log('Imagem clicada:', newSrc); // Verifica se o caminho da imagem está correto
+
+            // Atualiza o src da imagem principal com o caminho da miniatura
+            mainImage.src = newSrc;
+
+            // Realça a miniatura selecionada (opcional)
             thumbnails.forEach(img => img.classList.remove('active')); // Remove a classe 'active' de todas as miniaturas
             this.classList.add('active'); // Adiciona a classe 'active' à miniatura clicada
         });
     });
-
-    prevButton.addEventListener('click', function () {
-        // Move para a imagem anterior
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : thumbnails.length - 1; // Se chegar ao início, volta para o final
-        updateCarousel(); // Atualiza o carrossel
-    });
-
-    nextButton.addEventListener('click', function () {
-        // Move para a próxima imagem
-        currentIndex = (currentIndex < thumbnails.length - 1) ? currentIndex + 1 : 0; // Se chegar ao final, volta para o início
-        updateCarousel(); // Atualiza o carrossel
-    });
-
-    // Inicializa o carrossel
-    updateCarousel();
 });

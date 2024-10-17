@@ -165,22 +165,23 @@ img {
 }
 
 .prev, .next {
-    background-color: #fff; /* Fundo branco dos botões */
+    background-color: rgba(194, 191, 191, 0.5); /* #dddddd com 50% de opacidade */ /* Fundo branco dos botões */
     border: none; /* Remove a borda padrão */
     font-size: 24px; /* Tamanho da fonte */
     cursor: pointer; /* Cursor de clique */
     padding: 10px;
     position: absolute; /* Posição absoluta para fixar os botões nas extremidades */
     top: 50%;
+    border-radius: 200%;
     transform: translateY(-50%); /* Centraliza os botões verticalmente */
     z-index: 100; /* Garante que os botões fiquem sobre o conteúdo */
+
     transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
 }
 
 .prev {
     left: 0; /* Botão anterior na esquerda */
-    border-radius: 50%; /* Para deixá-lo redondo */
-    background-color: transparent; /* Botão transparente */
+    
 }
 
 .next {
@@ -196,7 +197,7 @@ img {
     margin-top: 1rem;
     background-color: #301c6e; /* Cor roxa */
     color: white; /* Texto branco para contraste */
-    width: 7vw; /* Deixa o botão ocupar toda a largura disponível */
+    max-width: 7vw; /* Deixa o botão ocupar toda a largura disponível */
     padding: 9px 0; /* Altura do botão */
     border: none; /* Remove as bordas */
     border-radius: 2px; /* Bordas levemente arredondadas */
@@ -205,11 +206,11 @@ img {
 }
 
 footer {
-    background: #301c6e;
+    background: #c4c2c2;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #301c6e;
     padding: 0 0 1rem; /* Aumenta o padding inferior para criar espaço */
     width: 100vw; /* O footer continua ocupando toda a largura da tela */
     height: auto; /* Deixe o height automático para que o conteúdo defina a altura */
@@ -223,7 +224,7 @@ footer {
 
 .medias-socias i {
     font-size: 1.3rem; /* Reduz o tamanho dos ícones */
-    border: 0.1rem solid white;
+    border: 0.1rem solid #301c6e;
     padding: 0.5rem; /* Ajusta o padding dos ícones */
     border-radius: 50%;
     margin: 0.25rem; /* Reduz o espaço entre os ícones */
@@ -238,7 +239,7 @@ footer {
 }
 
 .links a {
-    color: white;
+    color: #301c6e;
     text-decoration: none;
     margin: 0 0.5rem; /* Reduz a distância entre os links */
     font-size: 1rem; /* Diminui o tamanho da fonte */
