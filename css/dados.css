@@ -6,41 +6,44 @@
 }
 
 body {
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    max-width: 100vw;
+    min-height: 100vh;
     background-color: #dddddd;
     display: flex;
-    align-items: flex-start; /* Alinha o conteúdo no topo, evitando que a navbar suma */
-    flex-direction: column; /* Organiza a navbar e o conteúdo principal verticalmente */
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita a rolagem horizontal */
 }
 
 .main-container {
-    width: 90%; /* Largura reduzida para 90% */
+    max-width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    padding: 20px; /* Espaçamento interno */
-    margin: 3rem auto; /* Centraliza o container no centro da página */
+    justify-content: center;
+    padding: 20px;
+    margin: 3rem auto;
 }
 
 .main {
-    width: 100%; /* Define largura total dentro do container */
+    width: 100%;
     display: flex;
-    justify-content: space-between; /* Espaça a coluna esquerda e direita */
-    align-items: flex-start; /* Alinha os itens no topo */
-    padding: 20px; /* Espaçamento interno */
-    max-width: 95%; /* Define uma largura máxima */
-    border: 1px solid #ccc; /* Borda ao redor do main */
-    border-radius: 20px; /* Arredondamento das bordas */
-    background-color: #f2f2f2; /* Fundo claro */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Coluna esquerda */
 .esquerda {
-    width: 40vw; /* Corrigido para 40vw para melhor adaptação ao layout */
+    width: 40vw;
     margin-top: 1%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     margin-left: 6rem;
 }
 
@@ -48,70 +51,59 @@ body {
 .direita {
     width: 50%;
     font-size: 100%;
-    margin-top: 4%; /* Espaço extra acima da coluna direita */
+    margin-top: 4%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
+/* Imagens */
 img {
     width: 20vw;
-    height: auto; /* Mantém a proporção correta da imagem */
+    height: auto;
 }
 
 .icons {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    display: flex; /* Ícones lado a lado */
-    gap: 2rem; /* Espaço entre os ícones */
-    align-items: center; /* Alinhamento vertical dos ícones */
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
 .icons svg {
-    fill: #301c6e; /* Cor dos ícones */
-    width: 2vw; /* Largura dos ícones */
-    height: 2.5vh; /* Altura dos ícones */
-    cursor: pointer; /* Mudança do cursor ao passar o mouse */
+    fill: #301c6e;
+    width: 2vw;
+    height: 2.5vh;
+    cursor: pointer;
 }
-
 
 .dados h2,
 .sinopse h2 {
     color: black;
-    text-align: left; /* Alinha o texto à esquerda */
-    margin: 0; /* Remove a margem padrão */
+    text-align: left;
+    margin: 0;
     margin-top: 10%;
 }
 
 .dados p,
 .sinopse p {
-    text-align: justify; /* Justifica o texto dos parágrafos */
-    margin: 0; /* Remove a margem padrão para o parágrafo */
-    padding-top: 1rem; /* Adiciona um pequeno espaço entre o título e o parágrafo */
+    text-align: justify;
+    margin: 0;
+    padding-top: 1rem;
 }
 
 .salvar {
     margin-top: 2rem;
-    background-color: #301c6e; /* Cor roxa */
-    color: white; /* Texto branco para contraste */
-    width: 100%; /* Deixa o botão ocupar toda a largura disponível */
-    padding: 3% 0; /* Altura do botão */
-    border: none; /* Remove as bordas */
-    border-radius: 3px; /* Bordas levemente arredondadas */
-    font-size: 16px; /* Tamanho do texto */
-    cursor: pointer; /* Mostra o ícone de "mãozinha" ao passar o mouse */
-}
-
-.botao button:hover {
-    background-color: #271a54; /* Cor ligeiramente mais escura ao passar o mouse */
-}
-
-
-.thumbnails img {
-    max-width: 3rem; /* ou qualquer largura desejada */
-    height: auto; /* Mantém a proporção */
-    margin: 5px;
+    background-color: #301c6e;
+    color: white;
+    width: 100%;
+    padding: 3% 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
     cursor: pointer;
 }
+
 
 /* Estilos do carrossel */
 .carousel-container {
@@ -133,17 +125,17 @@ img {
 .carousel-items {
     margin-left: 0.5rem;
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Transição suave para as animações do carrossel */
-    width: 100%; /* O carrossel ocupa toda a largura do container */
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .item {
-    min-width: 16rem; /* Largura mínima de cada item */
-    height: 20rem;
+    min-width: 13rem;
+    height: 22rem;
     margin: 1rem;
     background-color: #f2f2f2;
-    border-radius: 9px; /* Arredonda as bordas dos itens */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra nos itens */
+    border-radius: 9px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -151,12 +143,11 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
-    width: 8vw; /* Mantém a largura total do item */
-    height: 15vh; /* Define uma altura fixa para as imagens */
-    object-fit: cover; /* Corta as imagens para preencher o espaço sem distorção */
-    border-radius: 8px; /* Arredonda as bordas das imagens */
+    width: 8vw;
+    height: 15vh;
+    object-fit: cover;
+    border-radius: 8px;
 }
-
 
 .item p {
     margin-top: 10px;
@@ -165,80 +156,99 @@ img {
 }
 
 .prev, .next {
-    background-color: rgba(194, 191, 191, 0.5); /* #dddddd com 50% de opacidade */ /* Fundo branco dos botões */
+    background-color: rgba(194, 191, 191, 0.5); /* Fundo semitransparente */
     border: none; /* Remove a borda padrão */
-    font-size: 24px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de clique */
-    padding: 10px;
-    position: absolute; /* Posição absoluta para fixar os botões nas extremidades */
+    font-size: 24px; /* Tamanho da seta */
+    cursor: pointer; /* Ícone de "mãozinha" ao passar o mouse */
+    padding: 10px; /* Espaçamento interno */
+    width: 60px;  /* Largura e altura iguais para garantir que seja um círculo */
+    height: 60px; /* Altura igual à largura */
+    border-radius: 50%; /* Transforma o botão em um círculo */
+    position: absolute; /* Posição absoluta para fixar nas extremidades */
     top: 50%;
-    border-radius: 200%;
-    transform: translateY(-50%); /* Centraliza os botões verticalmente */
-    z-index: 100; /* Garante que os botões fiquem sobre o conteúdo */
-
-    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    z-index: 100; /* Garante que o botão esteja acima do conteúdo */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
 }
 
 .prev {
-    left: 0; /* Botão anterior na esquerda */
-    
+    left: 0;
 }
 
 .next {
-    left: 93rem; /* Botão próximo na direita */
+    right: 0;
 }
 
-
-.carousel-container h2{
+.carousel-container h2 {
     color: black;
 }
 
-.ver-mais{
+.ver-mais {
     margin-top: 1rem;
-    background-color: #301c6e; /* Cor roxa */
-    color: white; /* Texto branco para contraste */
-    max-width: 7vw; /* Deixa o botão ocupar toda a largura disponível */
-    padding: 9px 0; /* Altura do botão */
-    border: none; /* Remove as bordas */
-    border-radius: 2px; /* Bordas levemente arredondadas */
-    font-size: 16px; /* Tamanho do texto */
-    cursor: pointer; /* Mostra o ícone de "mãozinha" ao passar o mouse */
+    background-color: #301c6e;
+    color: white;
+    width: 8vw;
+    height: 5vh;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
+/* Footer */
 footer {
     background: #c4c2c2;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #301c6e;
-    padding: 0 0 1rem; /* Aumenta o padding inferior para criar espaço */
-    width: 100vw; /* O footer continua ocupando toda a largura da tela */
-    height: auto; /* Deixe o height automático para que o conteúdo defina a altura */
+    width: 100vw; /* Certifica que o footer ocupa a largura total da viewport */
+    margin-left: 0; /* Remove qualquer margem lateral */
+    margin-right: 0;
+    padding: 0 0 1rem;
     margin-top: 1rem;
 }
 
 .medias-socias {
     margin-top: 1rem;
-    margin-bottom: 0.75rem; /* Diminui o espaço abaixo dos ícones */
+    margin-bottom: 0.75rem;
 }
 
 .medias-socias i {
-    font-size: 1.3rem; /* Reduz o tamanho dos ícones */
+    font-size: 1.3rem;
     border: 0.1rem solid #301c6e;
-    padding: 0.5rem; /* Ajusta o padding dos ícones */
+    padding: 0.5rem;
     border-radius: 50%;
-    margin: 0.25rem; /* Reduz o espaço entre os ícones */
+    margin: 0.25rem;
     cursor: pointer;
 }
 
-
 .copyright {
-    font-size: 0.85rem; /* Diminui o tamanho do texto de copyright */
-    margin-top: 0.5rem; /* Reduz o espaço acima do copyright */
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
 }
 
-.image-wrapper{
+/* Ajustes nas imagens principais */
+.image-wrapper {
     background-color: #ededed;
     height: 14rem;
     border-radius: 0.5rem;
+}
+
+.image-wrapper img {
+    max-width: 40rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Thumbnails */
+.thumbnails img {
+    max-width: 3rem;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
 }
