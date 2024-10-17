@@ -231,23 +231,6 @@ footer {
     cursor: pointer;
 }
 
-.links {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0.5rem 0; /* Diminui o espaço entre os links e o conteúdo do footer */
-}
-
-.links a {
-    color: #301c6e;
-    text-decoration: none;
-    margin: 0 0.5rem; /* Reduz a distância entre os links */
-    font-size: 1rem; /* Diminui o tamanho da fonte */
-}
-
-.links a:hover {
-    opacity: 0.55;
-}
 
 .copyright {
     font-size: 0.85rem; /* Diminui o tamanho do texto de copyright */
