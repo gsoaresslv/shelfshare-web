@@ -1,5 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 header {
     margin: 0; /* Remove margens do header */
+}
+
+body{
+    overflow-x: hidden; /* Evita a rolagem horizontal */
 }
 
 h2 {
@@ -11,6 +21,7 @@ h2 {
 
 nav {
     background-color: #301c6e;
+    width: 100%;
 }
 
 .navbar {

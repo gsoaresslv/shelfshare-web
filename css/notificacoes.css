@@ -2,6 +2,10 @@ section {
     padding: 20px;
 }
 
+body{
+    background-color: #dddddd;
+}
+
 .notifications {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
