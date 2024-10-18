@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+   background-color: #dddddd;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   
+}
+
+
+h1{
+    text-align: center;
+    margin: 2rem;
+
+}
+
+.section, p{
+    text-align: center;
+}
+
+/* Margem entre os ícones */
+.icones svg {
+    margin-left: 35px;
+    width: 3vw;  /* Aumenta o tamanho dos ícones */
+    height: 4vh; /* Aumenta o tamanho dos ícones */
+}
+/* style.css */
+
+/* Estilos para o container de pesquisa */
+.pesquisa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaço entre os itens */
+    margin: 50px 0; /* Margem superior e inferior */
+}
+
+.pesquisa-container .item-icone svg {
+    width: 30px;  /* Ajusta o tamanho do ícone de localização */
+    height: 30px;
+    fill: #654cae;   /* Cor do ícone */
+}
+
+.pesquisa-container .item-input input {
+    padding: 10px;
+    width: 750px; /* Largura da caixa de texto */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.pesquisa-container .item-botao button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#d1caed;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa-container .item-botao button:hover {
+    background-color: #301c6e;
+    color: white;
+}
+
+.imagens-grandes {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 0;
+    
+}
+
+.imagem-grande img {
+    width: 100%;
+    height: 30vh;
+    cursor: pointer;
+    border-radius: 4%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.imagem-grande img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para o carrossel da sexta parte */
+/* Container do carrossel */
+.carrossel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-behavior: smooth;
+    width: 80%; /* Define a largura do carrossel */
+}
+
+.carrossel-item {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.carrossel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Botões do carrossel (anterior e próximo) */
+.carrossel-btn {
+
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carrossel-btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+/* Estilo do carrossel */
+.carrossel {
+    display: flex;
+    gap: 10px;
+    width: 80%; /* Define a largura do carrossel */
+    overflow: hidden; /* Esconde a barra de rolagem */
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+/* Esconder barra de rolagem visual no carrossel */
+.carrossel::-webkit-scrollbar {
+    display: none; /* Para navegadores baseados no WebKit */
+}
+
+.carrossel {
+    -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
+    scrollbar-width: none;  /* Para Firefox */
+}
+
+
