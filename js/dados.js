@@ -25,19 +25,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const thumbnails = document.querySelectorAll('.thumbnails img');
     const mainImage = document.getElementById('main-image');
 
-    // Evento de clique nas miniaturas
+    // Evento de "mouseover" nas miniaturas para trocar a imagem principal
     thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener('click', function () {
-            // Obtém o caminho da miniatura clicada
+            // Obtém o caminho da miniatura sobre a qual o mouse passou
             const newSrc = this.src;
-            console.log('Imagem clicada:', newSrc); // Verifica se o caminho da imagem está correto
+            console.log('Imagem sobrevoada:', newSrc); // Verifica se o caminho da imagem está correto
 
             // Atualiza o src da imagem principal com o caminho da miniatura
             mainImage.src = newSrc;
 
             // Realça a miniatura selecionada (opcional)
             thumbnails.forEach(img => img.classList.remove('active')); // Remove a classe 'active' de todas as miniaturas
-            this.classList.add('active'); // Adiciona a classe 'active' à miniatura clicada
+            this.classList.add('active'); // Adiciona a classe 'active' à miniatura sobre a qual o mouse passou
         });
     });
 });

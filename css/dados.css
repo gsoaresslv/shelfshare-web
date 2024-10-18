@@ -16,8 +16,8 @@ body {
 }
 
 .main-container {
-    max-width: 90%;
-    width: 80%;
+    max-width: 80%;
+    max-height: 40rem;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -44,21 +44,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 6rem;
+    margin-left: 7rem;
 }
 
 /* Coluna direita */
 .direita {
-    width: 50%;
+    margin-top: 3rem;
+    width: 100%;
     font-size: 100%;
-    margin-top: 4%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 1rem;
 }
 
 /* Imagens */
 img {
-    width: 20vw;
+    width: 13vw;
     height: auto;
 }
 
@@ -82,7 +81,8 @@ img {
     color: black;
     text-align: left;
     margin: 0;
-    margin-top: 10%;
+    margin-top: 3%;
+    font-size: 1.5rem;
 }
 
 .dados p,
@@ -90,18 +90,27 @@ img {
     text-align: justify;
     margin: 0;
     padding-top: 1rem;
+    font-size: 1rem;
 }
 
 .salvar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin-top: 2rem;
     background-color: #301c6e;
     color: white;
-    width: 100%;
-    padding: 3% 0;
+    width: 70%;
+    padding: 2% 0;
     border: none;
     border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.salvar:hover{
+    background-color: #d1caed;
+    color: black;
 }
 
 
@@ -190,8 +199,8 @@ img {
     margin-top: 1rem;
     background-color: #301c6e;
     color: white;
-    width: 8vw;
-    height: 5vh;
+    width: 7vw;
+    height: 3.5vh;
     border: none;
     border-radius: 2px;
     font-size: 16px;
@@ -254,4 +263,40 @@ footer {
     height: auto;
     margin: 5px;
     cursor: pointer;
+}
+
+.item p{
+    margin-top: 1.5rem;
+}
+
+/* Botão Flutuante WhatsApp */
+.botao-flutuante-whatsapp {
+    position: fixed;
+    bottom: 4%;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    background-color: #3f2468; /* Cor roxa similar à da imagem */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.botao-flutuante-whatsapp a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.botao-flutuante-whatsapp:hover {
+    background-color: #563d91; /* Tom mais claro ao passar o mouse */
+}
+
+.botao-flutuante-whatsapp i {
+    font-size: 28px;
 }
