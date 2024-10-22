@@ -16,21 +16,19 @@ body {
 }
 
 .main-container {
-    max-width: 80%;
-    max-height: 40rem;
+    width: 80%;
+    height: 40rem;
     display: flex;
     justify-content: center;
     padding: 20px;
     margin: 3rem auto;
 }
 
-.main {
+.main-box {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
-    max-width: 95%;
+    padding: 0;
     border: 1px solid #ccc;
     border-radius: 20px;
     background-color: #f2f2f2;
@@ -39,49 +37,59 @@ body {
 
 /* Coluna esquerda */
 .esquerda {
-    width: 40vw;
-    margin-top: 1%;
+    padding: 2%;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.product-image {
+    display: flex;
     justify-content: center;
-    margin-left: 7rem;
+    align-items: center;
+    height: 60%;
+}
+.product-image img{
+    height: 100%;
+    width: auto;
 }
 
 /* Coluna direita */
 .direita {
-    margin-top: 3rem;
-    width: 100%;
-    font-size: 100%;
-    margin-right: 1rem;
-}
-
-/* Imagens */
-img {
-    width: 13vw;
-    height: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2%;
+    width: 50%;
+    height: 100%;
 }
 
 .icons {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     gap: 2rem;
     align-items: center;
+    height: 4%;
 }
 
 .icons svg {
     fill: #301c6e;
-    width: 2vw;
-    height: 2.5vh;
+    height: 100%;
+    margin-left: 25%;
     cursor: pointer;
 }
-
+.dados, .sinopse{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .dados h2,
 .sinopse h2 {
     color: black;
     text-align: left;
     margin: 0;
-    margin-top: 3%;
     font-size: 1.5rem;
 }
 
@@ -89,7 +97,6 @@ img {
 .sinopse p {
     text-align: justify;
     margin: 0;
-    padding-top: 1rem;
     font-size: 1rem;
 }
 
@@ -97,20 +104,24 @@ img {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 2rem;
     background-color: #301c6e;
     color: white;
     width: 70%;
-    padding: 2% 0;
+    height: 3rem;
     border: none;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
-
+.button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 .salvar:hover{
     background-color: #d1caed;
     color: black;
+    border: #301c6e 0.1rem solid;
 }
 
 
@@ -226,6 +237,12 @@ img {
 }
 
 /* Thumbnails */
+.thumbnails{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .thumbnails img {
     max-width: 3rem;
     height: auto;
