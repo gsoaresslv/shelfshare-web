@@ -50,9 +50,15 @@ h1{
 .pesquisa-container .item-input input {
     padding: 10px;
     width: 750px; /* Largura da caixa de texto */
-    border: none;
     border-radius: 5px;
     font-size: 16px;
+    border: 0;
+}
+
+.item-input input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 
@@ -81,6 +87,15 @@ h1{
 
 .imagem-grande img {
     width: 100%;
+    height: 30vh;
+    cursor: pointer;
+    border-radius: 4%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    
+}
+
+.imagem-grande2 img {
+    width: 95%;
     height: 30vh;
     cursor: pointer;
     border-radius: 4%;
