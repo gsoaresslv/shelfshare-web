@@ -121,8 +121,7 @@ body {
     display: flex;
 }
 .salvar:hover{
-    background-color: #d1caed;
-    color: black;
+    background-color: #563d91;
     border: #301c6e 0.1rem solid;
 }
 

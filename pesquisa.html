@@ -1,97 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <!--menu da pagina com icones e logo-->
-                <div class="img">
-                    <div class="logo"><img src="img/shelfshare_roxo.png"></div>
-                    <div class="menu">
-                        <a href="home.html"><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
-                            </svg></button></a>
-                        <a href="pesquisa.html">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                  </svg>
-                                </button>
-                        </a>
-                        <a href="salvos.html"><button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
-                            </svg>
-                        </button></a>
-                        <a href="perfil.html"><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                            </svg></button></a>
-                    </div> 
-                </div>    
-            </nav>    
-        </header>
-        <main>
-            <div class="forms"> <!-- Criando div para armazenar os dados enviados pelo usuario -->
-                <input class="form-control" type="text" placeholder="Pesquisar"> <!-- Criando input para o usuario digitar o que deseja pesquisar -->
-                <label for="form-select">Filtrar por gênero:</label> 
-                <select class="form-select" aria-label="Default select example"> <!-- Criando select para o usuario escolher o genero do livro que deseja pesquisar -->
-                    <option value="1" selected>Romance</option> <!-- Criando opções para o usuario escolher -->
-                    <option value="2">Suspense</option>
-                    <option value="3">Terror</option>
-                    <option value="4">Biografia</option>
-                    <option value="5">Ação</option>
-                    <option value="6">Crônica</option>
-                    <option value="7">Científico</option>
-                    <option value="8">Infantil</option>
-                    <option value="9">Ficção</option>
-                    <option value="10">Poesia</option>
-                </select>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pesquisa.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Resultados da pesquisa</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h2>Shelfshare</h2>
+                <div class="buscar-box">
+                    <div class="input-buscar">
+                        <input type="text" placeholder="Faça uma busca">
+                    </div>
+                    <div class="lupa-buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>    
+                    </div>
+                </div>
+                <div class="icones">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                        <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </div> 
             </div>
-            <section class="tamanhosection"> <!-- Criando section para armazenar as imagens dos livros -->
-                <div>
-                    <img src="img/acaba.jpg" alt="acaba" class="imagens"> <!-- Adicionando imagens dos livros -->
-                    <a href="dados.html"><figcaption>É Assim que Acaba</figcaption></a> <!-- Adicionando legenda para as imagens -->
-                </div>
-                <div>
-                    <img src="img/cinco_passos.jpg" alt="cinco_passos" class="imagens">
-                    <figcaption>A Cinco Passos de Você</figcaption>
-                </div>
-                <div>
-                    <img src="img/coraline.jpg" alt="coraline" class="imagens">
-                    <figcaption>Coraline</figcaption>
-                </div>
-                <div>
-                    <img src="img/estilhaca-me.jpg" alt="estilhaca-me" class="imagens">
-                    <figcaption>Estilhaça-me</figcaption>
-                </div>
-        </main>
-        <footer>
-            <div id="footer_items"> <!--footer com redes sociais-->
-                <span id="copyright">
-                   <p>&copy; ShelfShare</p>
-                </span>
-                <div class="social-media-buttons">
-                    <a href="mailto:shelfsharepi@gmail.com">
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                    <a href="https://www.instagram.com/shelfshare.pi/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61561101542841">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
+        </nav>
+    </header>
+    <h1>Resultados:</h1>
+    <div class="container">
+       
+        <div class="livros">
+            
+            
+            <div class="item">
+                <img src="img/imperfeitos.jpg" alt="Imperfeitos">
+                <div class="caption">Imperfeitos</div>
+                <p>Olive se sente como a gêmea azarada da casa: dos acidentes estranhamente inexplicáveis ao fracasso na vida profissional e amorosa ― nada dá certo para ela.</p>
+                
             </div>
-        </footer>
-    </body>
+            <div class="item">
+                <img src="img/imperfeitos.jpg" alt="Imperfeitos">
+                <div class="caption">Imperfeitos</div>
+                <p>Olive se sente como a gêmea azarada da casa: dos acidentes estranhamente inexplicáveis ao fracasso na vida profissional e amorosa ― nada dá certo para ela.</p>
+               
+            </div>
+            <div class="item">
+                <img src="img/imperfeitos.jpg" alt="Imperfeitos">
+                <div class="caption">Imperfeitos</div>
+                <p>Olive se sente como a gêmea azarada da casa: dos acidentes estranhamente inexplicáveis ao fracasso na vida profissional e amorosa ― nada dá certo para ela.</p>
+               
+            </div>
+        </div>
+       
+    </div>
+    
+    <footer>
+        <div class="medias-socias">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+       
+        <p class="copyright"> ShelfShare </p>
+       
+    
+    </footer>
+
+</body>
 </html>
