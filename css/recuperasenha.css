@@ -1,7 +1,7 @@
 /* Definindo estilo de todo o corpo da tela*/
 body {
     font-family: Arial, sans-serif;
-    background-color: aliceblue;
+    background-color: #dddddd;
     margin: 1rem;
     padding: 0;
     display: flex;
@@ -12,9 +12,10 @@ body {
 }
 /* Definindo estilo e tamanho da imagem*/
 img {
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
+  width: 9rem; /* Tamanho da imagem, ajuste conforme necessário */
+  height: 9rem;
+  overflow: hidden; /* Corta o excesso da imagem */
+  border-radius: 50%;
     
 }
 
@@ -40,9 +41,10 @@ img {
   input {
     width: 20rem;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 0.4rem;
     font-size: 1rem;
     margin-top: 0.3rem;
+    border: none;
 
   }
   /* Definindo estilo e tamanho para os botões*/
@@ -52,7 +54,7 @@ img {
     padding: 1rem ;
     font-size: 1rem;
     border-radius: 2rem;
-    background-color: #645cae;
+    background-color: #301c6e;
     color: white;
     border: none;
      
