@@ -14,61 +14,60 @@ body {
 }
 
 .main-container {
-    width: 100%; /* Largura total da tela */
+    width: 120rem; /* Largura total da tela */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    padding: 20px; /* Espaçamento interno, se necessário */
+    padding: 2rem; /* Espaçamento interno, se necessário */
+    align-content: center;
     margin-top: 3rem;;
 }
 
 .main {
-    width: 100%; /* Altera a largura para 100% para se ajustar ao container */
+    width: 100rem; /* Altera a largura para 100% para se ajustar ao container */
     display: flex; 
-    justify-content: space-between; /* Espaça os elementos da esquerda e da direita */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    padding: 20px; /* Espaçamento interno */
-    max-width: 95%; /* Define uma largura máxima para o container */
+    justify-content: space-evenly; /* Espaça os elementos da esquerda e da direita */
+    align-items: center; /* Alinha os itens ao topo */
+    padding: 2rem; /* Espaçamento interno */
+    max-width: 100%; /* Define uma largura máxima para o container */
     margin: 0 auto; /* Centraliza o container na tela */
     border: 1px solid #ccc; /* Opcional: adiciona uma borda ao redor */
     border-radius: 20px; /* Opcional: arredonda as bordas */
     background-color: #f2f2f2; /* Opcional: cor de fundo da caixa */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: adiciona sombra */
+    gap: 5%;
 }
 
 
 /* Definindo local da div para esquerda */
 .esquerda {
-    width: 100vw;
+    width: 50%;
     text-align: center;
-    margin-top: 1%;
+    margin: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    margin-left: 5rem;
 }
 
 /* Definindo local da div para direita */
 .direita {
     width: 50%;
     font-size: 100%;
-    margin-top: 4%; /* Aumenta o espaço acima do contêiner direito */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 1%; 
 }
  
 
 .file-upload-form {
     cursor: pointer;
     background-color: #ddd;
-    padding: 15vh 2vh;
+    padding: 15% 2%;
     justify-content: center;
     align-items: center;
     border-radius: 40px;
     border: 2px dashed rgb(82, 82, 82);
-    width: 30vw;
-    height: 55vh;
-    margin-top: 4vh;
+    width: 80%;
+    height: 40%;
+    margin-top: 8%;
 }
 
 .file-upload-label input {
@@ -86,8 +85,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 17px;
-    gap: 6px;
+    font-size: 100%;
+    gap: 0.5rem;
 }
 
 .browse-button {
@@ -103,13 +102,11 @@ body {
 }
 
 .form-control {
-    width: 100%;
     padding: 10px;
     margin: 5px 0;
 }
 
 .form-select {
-    width: 100%;
     padding: 10px;
     margin: 5px 0;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
@@ -146,7 +143,7 @@ body {
 }
 
 .form-control, .form-select, .sinopse textarea {
-    width: 40vw;
+    width: 100%;
     padding: 12px;
     margin: 2% 0;
     border: 2px solid transparent; /* Borda padrão transparente */
@@ -176,7 +173,7 @@ label {
 
 
 .form-control, .sinopse textarea {
-    width: 40vw;
+    width: 100%;
     padding: 12px;
     margin: 2% 0;
     border-radius: 8px; /* Bordas levemente arredondadas */
@@ -191,9 +188,9 @@ label {
 }
 
 .form-select {
-    width: 40vw;
+    width: 100%;
     height: 5vh;
-    padding: 10px;
+    padding: 3%;
     margin: 5px 0;
     border-radius: 8px; /* Borda arredondada */
     outline: none; /* Remove a borda padrão */
@@ -202,4 +199,31 @@ label {
     transition: box-shadow 0.3s ease; /* Transição suave para o efeito de foco */
 }
 
+@media only screen and (max-width: 768px) {
+    .main-container{
+        width: 100%;
+        height: fit-content;
+    }
+    .esquerda{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .main{
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        gap: 3rem;
+    }
+    .direita{
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .form-selector {
+        padding: 0;
+    }
+}
 
