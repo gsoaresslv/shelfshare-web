@@ -46,3 +46,27 @@ carrosselImages.forEach(img => {
         window.location.href = "#"; // Substitua com o link correto
     });
 });
+
+// Seleciona o ícone de localização e o modal
+const iconeLocalizacao = document.querySelector('.item-icone svg');
+const modalLocalizacao = document.getElementById('modal-localizacao');
+const closeModal = document.querySelector('.close');
+
+// Exibe o modal quando o ícone de localização é clicado
+iconeLocalizacao.addEventListener('click', () => {
+    modalLocalizacao.style.display = 'flex';
+});
+
+// Fecha o modal ao clicar no "x"
+closeModal.addEventListener('click', () => {
+    modalLocalizacao.style.display = 'none';
+});
+
+// Fecha o modal ao clicar fora do conteúdo do modal
+window.addEventListener('click', (event) => {
+    if (event.target === modalLocalizacao) {
+        modalLocalizacao.style.display = 'none';
+    }
+});
+
+
