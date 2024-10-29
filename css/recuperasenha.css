@@ -16,14 +16,19 @@ img {
   height: 9rem;
   overflow: hidden; /* Corta o excesso da imagem */
   border-radius: 50%;
-    
+  object-fit: cover;
+  
+  
 }
 
 .center {
-    text-align: center;
+  margin-top: 7rem;
+  text-align: center;
     
 }
-
+h1{
+  margin:0.7rem;
+}
 .senha{
   text-align: center;
 }
@@ -39,17 +44,18 @@ img {
   }
   /* Definindo estilo e tamanho para os inputs*/
   input {
-    width: 20rem;
+    width: 30rem;
     padding: 1rem;
     border-radius: 0.4rem;
     font-size: 1rem;
     margin-top: 0.3rem;
-    border: none;
+    border:none;
+
 
   }
   /* Definindo estilo e tamanho para os botões*/
   button {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     width: 8rem;
     padding: 1rem ;
     font-size: 1rem;
@@ -58,6 +64,9 @@ img {
     color: white;
     border: none;
      
+  }
+  input:focus{
+    outline: none;
   }
   /* Definindo estilo após acessar o botão*/
   button:hover {
