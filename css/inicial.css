@@ -222,7 +222,8 @@ h1{
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    width: 400px;
+    width: 60rem;
+    height: 40rem;
     max-width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -264,6 +265,14 @@ h1{
     background-color: #301c6e;
 }
 
+.imagem_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-
-
+.imagem_modal img {
+    max-width: 8rem;
+    height: auto;
+}
