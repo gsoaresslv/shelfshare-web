@@ -216,6 +216,7 @@ h1{
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
     justify-content: center;
     align-items: center;
+    
 }
 
 .modal-content {
@@ -227,6 +228,7 @@ h1{
     max-width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    
 }
 
 .close {
@@ -242,27 +244,34 @@ h1{
 }
 
 .input-localizacao {
-    width: 100%;
+    width: 50rem;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
+    background-color: #f2f2f2;
+    flex-direction: column;
 }
+
+.input-localizacao:focus{
+    outline: none;
+  }
 
 .btn-localizacao {
     padding: 10px 20px;
-    background-color: #654cae;
+    background-color: #301c6e;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    flex-direction: column;
 }
 
 .btn-localizacao:hover {
-    background-color: #301c6e;
+    background-color: #654cae;
 }
 
 .imagem_modal {
