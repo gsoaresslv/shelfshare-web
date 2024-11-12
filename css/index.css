@@ -29,8 +29,19 @@ header {
 #navbar {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
+    justify-content: end;
+}
+
+.button-nav{
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+}
+
+.button-nav div{
+    margin-left: 5rem;
+    color: #301c6e;
 }
 
 #nav_logo {
@@ -41,12 +52,12 @@ header {
     font-size: 1.5rem;
     background-color: var(--color-neutral-2);
     font-weight: bolder;
-    color: #664caf;
-    border-bottom: solid #664caf;
+    color: #301c6e;
+    border-bottom: solid #301c6e;
 }
 .nav-item a{
     font-size: 1.5rem;
-    color: #664caf;
+    color: #301c6e;
     background-color: var(--color-neutral-2);
     font-weight: bolder;
     border: 0;
@@ -54,8 +65,8 @@ header {
 }
 .nav-item a:hover{
     background-color: white;
-    color: #664caf;
-    border-bottom: solid #664caf;
+    color: #301c6e;
+    border-bottom: solid #301c6e;
 }   
 #nav_list {
     display: flex;
@@ -155,7 +166,7 @@ header{
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: var(--color-primary-2);
+
     width: 50%;
     height: 100%;
     position: absolute;
@@ -168,8 +179,8 @@ header{
 button{
     text-decoration: none;
     color: white;
-    background-color: #664CAF;
-    border: 2px solid #664CAF;
+    background-color: #301c6e;
+    border: 2px solid #301c6e;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: 500;
@@ -177,7 +188,7 @@ button{
 }
 button:hover{
     background-color: white;
-    color: #664CAF;
+    color: #301c6e;
 }
 
 
@@ -216,11 +227,11 @@ button:hover{
 
 :root {
     --color-primary-1: aliceblue;
-    --color-primary-2: #664caf;
-    --color-primary-3: #9ca4e7;
-    --color-primary-4: #838dcf;
-    --color-primary-5: #6b75b7;
-    --color-primary-6: #664caf;
+    --color-primary-2: #301c6e;
+    --color-primary-3: #301c6e;
+    --color-primary-4: #301c6e;
+    --color-primary-5: #301c6e;
+    --color-primary-6: #301c6e;
 
     --color-neutral-0: #fff;
     --color-neutral-1: #1d1d1d;
@@ -441,7 +452,7 @@ section {
 /* Definindo estilo dos atributos*/
 #title-sobre {
     font-size: 2.5rem; 
-    color: #664caf;
+    color: #301c6e;
 }
 #subtitle-sobre {
     font-size: 2rem; 
@@ -462,4 +473,9 @@ section {
 .text-sobre {
     font-size: 1rem; 
     color: #555;
+}
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: end;
 }
