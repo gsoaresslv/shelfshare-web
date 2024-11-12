@@ -148,6 +148,22 @@
 .form-control:focus {
     box-shadow: 1px 1px 8px #b4bbee; /* Aumenta a sombra no foco */
 }
+@media screen and (max-width: 768px) {
+    
+    .main {
+        flex-direction: column; /* Altera a direção dos elementos para coluna */
+        align-items: center; /* Alinha os itens ao centro */
+    }
 
+    .direita {
+        width: 100%; /* Altera a largura para 100% para se ajustar ao container */
+        margin-top: 2rem; /* Aumenta o espaço acima do contêiner direito */
+    }
+
+    .esquerda {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+    
+}
 
 

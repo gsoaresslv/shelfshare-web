@@ -143,3 +143,22 @@ p{
     background-color: #664CAF;
     color: white;
 }
+@media screen and (max-width: 768px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+    .right-login{
+        width: 100vw;
+    }
+    .card{
+        width: 80%;
+    }
+    .imgback{
+        max-width: 50%;
+        max-height: 50%;
+    }
+    
+}
