@@ -285,3 +285,29 @@ h1{
     max-width: 8rem;
     height: auto;
 }
+
+.container-resultado {
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.container-resultado:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.endereco {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #7b7b7b;
+}
+
+.endereco i {
+    margin-right: 12px; /* Aumente este valor para mais espaço */
+    margin-left: 1rem;
+    font-size: 18px;
+}
