@@ -285,13 +285,22 @@ h1{
     max-width: 8rem;
     height: auto;
 }
-
-.container-resultado {
+.container-lista{
     padding: 1rem;
     border: 1px solid #dddddd;
     border-radius: 8px;
     margin-bottom: 1rem;
-    width: 90%;
+    width: 98%;
+    margin-left: 0.7rem;
+
+}
+.container-resultado{
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 98%;
+    margin-left: 0.7rem;
 }
 
 .container-resultado:hover {
@@ -311,3 +320,4 @@ h1{
     margin-left: 1rem;
     font-size: 18px;
 }
+
