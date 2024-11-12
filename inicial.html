@@ -70,16 +70,19 @@
                 <div class="imagem_modal">
                     <img src="img/localização.png" alt="localização">
                 </div>
-                <h2>Escolha sua Localização</h2>
                 <p>Onde você quer trocar seus livros?</p>
 
                 <input type="text" id="cep" placeholder="Digite sua cidade, estado ou CEP" class="input-localizacao">
                 <button class="btn-localizacao" onclick="buscarCEP()">Buscar</button>
+                
                 <div id="container-resultado-cep" class="container-resultado">
                     <div id="resultado-cep" class="endereco" onclick="adicionarEndereco()">
                         <i class="fa fa-map-marker-alt"></i> 
                         <span id="endereco-completo"></span>
                     </div>
+                </div>
+                <div id="lista-cep" class="container-lista">
+                    <ul id="lista-enderecos"></ul>
                 </div>
             </div>
         </div>

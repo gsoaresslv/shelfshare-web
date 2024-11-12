@@ -69,6 +69,7 @@ window.addEventListener('click', (event) => {
     }
 });
 
+// Função de busca de CEP com API
 async function buscarCEP() {
     const cep = document.getElementById("cep").value;
 
@@ -97,6 +98,41 @@ async function buscarCEP() {
         alert("Erro ao buscar o CEP. Tente novamente.");
     }
 }
+
+// Funções de salvar e exibir endereços
+function adicionarEndereco() {
+    const endereco = document.getElementById('endereco-completo').textContent;
+
+    if (endereco) {
+        salvarEndereco(endereco);
+        exibirEnderecos();
+    }
+}
+
+function salvarEndereco(endereco) {
+    let enderecosSalvos = JSON.parse(localStorage.getItem('enderecos')) || [];
+    
+    // Verifica se o endereço já está salvo
+    if (!enderecosSalvos.includes(endereco)) {
+        enderecosSalvos.push(endereco);
+        localStorage.setItem('enderecos', JSON.stringify(enderecosSalvos));
+    }
+}
+
+function exibirEnderecos() {
+    const listaEnderecos = document.getElementById('lista-enderecos');
+    listaEnderecos.innerHTML = '';
+
+    const enderecosSalvos = JSON.parse(localStorage.getItem('enderecos')) || [];
+    enderecosSalvos.forEach(endereco => {
+        const li = document.createElement('li');
+        li.textContent = endereco;
+        listaEnderecos.appendChild(li);
+    });
+}
+
+// Exibe os endereços salvos ao carregar a página
+window.onload = exibirEnderecos;
 
 
 
