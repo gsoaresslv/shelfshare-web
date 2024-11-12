@@ -44,7 +44,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly;  
+    align-items: center;
 }
 
 .product-image {
@@ -54,6 +55,7 @@ body {
     height: 70%;
 }
 .product-image img{
+    margin: 1.5%;
     height: 100%;
     width: auto;
 }
@@ -127,15 +129,16 @@ body {
 
 /* Estilos do carrossel */
 .carousel-container {
-    width: 100%;
-    max-width: 170vh;
+    width: 110rem;
+    height: auto;
     margin: 0 auto;
-    padding: 20px;
+    margin-bottom: 3rem;
+    padding: 0;
     text-align: center;
 }
 
 .carousel {
-    margin-top: 2rem;
+    margin-top: 1.5%;
     position: relative;
     display: flex;
     align-items: center;
@@ -143,19 +146,21 @@ body {
 }
 
 .carousel-items {
-    margin: 0 4em;
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3%;
 }
 
 .item {
     justify-content: center;
     align-items: center;
-    min-width: 13rem;
-    height: 22rem;
-    margin: 1rem;
+    width: max-content;
+    margin: 0 auto;
     background-color: #f2f2f2;
     border-radius: 9px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -270,6 +275,10 @@ body {
     cursor: pointer;
     z-index: 1000;
     transition: background-color 0.3s ease;
+}
+
+.botao{
+    margin: 3rem;
 }
 
 .botao-flutuante-whatsapp a {
