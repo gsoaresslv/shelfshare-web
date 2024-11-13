@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados da Pesquisa</title>
+    <link rel="stylesheet" href="css/resultados.css">
+</head>
+<body>
+    <header>
+        <h1>Resultados da Pesquisa</h1>
+        <a href="inicial.html">Voltar</a>
+    </header>
+
+    <main>
+        <div id="resultados">
+            <!-- Os resultados serão inseridos aqui -->
+        </div>
+    </main>
+
+    <script>
+        // Função para exibir os resultados
+        function displayResults() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            const results = JSON.parse(urlParams.get('results'));
+
+            const resultsContainer = document.getElementById('resultados');
+
+            if (results && results.length > 0) {
+                results.forEach(result => {
+                    const bookElement = document.createElement('div');
+                    bookElement.classList.add('book-result');
+                    bookElement.innerHTML = `
+                        <h2>${result.title}</h2>
+                        <p><strong>Autor:</strong> ${result.authors}</p>
+                        <img src="${result.image}" alt="${result.title}">
+                    `;
+                    resultsContainer.appendChild(bookElement);
+                });
+            } else {
+                resultsContainer.innerHTML = `<p>Nenhum resultado encontrado para "${query}".</p>`;
+            }
+        }
+
+        // Chama a função para exibir os resultados quando a página for carregada
+        window.onload = displayResults;
+    </script>
+</body>
+</html>
