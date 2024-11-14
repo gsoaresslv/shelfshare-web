@@ -22,8 +22,8 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0;
-    background-color: var(--color-primary-1);
     z-index: 3;
+    background-color: #c4c2c2;
 }
 
 #navbar {
@@ -31,6 +31,7 @@ header {
     display: flex;
     align-items: end;
     justify-content: end;
+    margin-top: 1rem;
 }
 
 .button-nav{
@@ -42,6 +43,13 @@ header {
 .button-nav div{
     margin-left: 5rem;
     color: #301c6e;
+}
+
+.button-nav button{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 7vw;
+    height: 4vh;
 }
 
 #nav_logo {
@@ -119,6 +127,7 @@ header {
     display: flex;
     min-height: calc(100vh - 91px);
     position: relative;
+    background-color: #e3e2e2dd;
 }
 
 #cta {
@@ -150,15 +159,14 @@ header {
 
 a {
     text-decoration: none;
-    color: bluealice;
 }
 header{
     margin-bottom: 0;
 }
 .outdoor{
-    max-width: 55%;
-    max-height: 55%;
-    justify-self: center;
+    max-width: 90%;
+    max-height: 90%;
+    justify-self: right;
     align-self: center;
 }
 
@@ -176,6 +184,7 @@ header{
     align-content: center;
     justify-content: center;
 }
+
 button{
     text-decoration: none;
     color: white;
@@ -232,6 +241,7 @@ button:hover{
     --color-primary-4: #301c6e;
     --color-primary-5: #301c6e;
     --color-primary-6: #301c6e;
+    --color-primary-7: #c4c2c2;
 
     --color-neutral-0: #fff;
     --color-neutral-1: #1d1d1d;
@@ -249,7 +259,8 @@ html {
 }
 
 body {
-    background-color: var(--color-primary-1);
+    background-color: var(--color-primary-7);
+    overflow: hidden;
 }
 
 section {
