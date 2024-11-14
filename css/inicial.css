@@ -4,12 +4,78 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Define a altura do banner */
+    overflow: hidden; /* Garante que a imagem não saia do contêiner */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o contêiner */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+ 
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto no banner */
+    z-index: 10; /* Garante que o conteúdo fique sobre a imagem */
+  
+  }
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo escuro translúcido */
+    z-index: 1;
+}
+
+
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.banner p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #d1d1d1;
+}
+
+.banner-button {
+    padding: 12px 24px;
+    background-color: #5b4cb0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #3e3098;
+}
+
 body{
-   background-color: #dddddd;
    display: flex;
    flex-direction: column;
    height: 100vh;
    overflow-x: hidden; /* Evita a rolagem horizontal */
+   background-color: #dddddd;
    
 }
 
@@ -44,7 +110,7 @@ h1{
 .pesquisa-container .item-icone svg {
     width: 30px;  /* Ajusta o tamanho do ícone de localização */
     height: 30px;
-    fill: #654cae;   /* Cor do ícone */
+    fill: #301c6e;   /* Cor do ícone */
 }
 
 .pesquisa-container .item-input input {
@@ -53,6 +119,7 @@ h1{
     border-radius: 5px;
     font-size: 16px;
     border: 0;
+    background-color: white;
 }
 
 .item-input input:focus{
@@ -89,7 +156,6 @@ h1{
     width: 100%;
     height: 30vh;
     cursor: pointer;
-    border-radius: 4%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
     
 }
@@ -98,7 +164,6 @@ h1{
     width: 95%;
     height: 30vh;
     cursor: pointer;
-    border-radius: 4%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
     
 }
@@ -206,29 +271,28 @@ h1{
 
 /* Estilos para o modal */
 .modal {
-    display: none; /* Escondido por padrão */
+    display: none; /* Inicialmente oculto */
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
     justify-content: center;
     align-items: center;
-    
 }
 
 .modal-content {
     background-color: #fff;
+    margin: 15% auto;
     padding: 20px;
-    border-radius: 8px;
+    border: 1px solid #888;
     width: 60rem;
     height: 40rem;
     max-width: 90%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    
+    border-radius: 8px;
 }
 
 .close {
@@ -320,4 +384,3 @@ h1{
     margin-left: 1rem;
     font-size: 18px;
 }
-
