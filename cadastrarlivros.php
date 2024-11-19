@@ -72,7 +72,7 @@
                     <textarea type="descricao" class="form-control" name="descricao" id="input_descricao"></textarea>
                 </div>
                 <div class="btn_cadastrar">
-                    <a href="perfil.html"><button class="cadastrar">Cadastrar</button></a>
+                    <a href="perfil.php"><button class="cadastrar">Cadastrar</button></a>
                 </div>
             </div>    
         </div>
