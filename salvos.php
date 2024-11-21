@@ -3,34 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/salvos.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script rel="js/resultados.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Salvos</title>
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
-    <h1>Salvos</h1>
-    <!--as imagens da lista de salvos da pessoa-->
-    <section class="tamanhosection">
-        <div>
-          <img src="img/acaba.jpg" alt="acaba" class="imagens">
-          <a href="dados.html"><figcaption>É Assim que Acaba</figcaption></a>
+    <img src="img/bannerR (1).jpeg" alt="bannerresultados">
+
+    <div class="container">
+       
+        <div class="livros">
+            <div class="item">
+                <img src="img/a5passosdevc.jpg" alt="A cinco passos de você">
+                <div class="caption">A cinco passos de você</div>
+                <p>Usuário:@beatrizz</p>
+                <p>Data: 17/10/2024</p>
+            </div>
+            <div class="item">
+                <img src="img/asmusicasquevocenuncaouviu.jpg" alt="As músicas que você nunca ouviu">
+                <div class="caption">As músicas que você nunca ouviu</div>
+                <p>Usuário:@joana123</p>
+                <p>Data: 17/10/2024</p>
+            </div>
+            <div class="item">
+                <img src="img/emrotadecolisao.jpg" alt="Em rota de colisão">
+                <div class="caption">Em rota de colisão</div>
+                <p>Usuário:@caiosantos</p>
+                <p>Data: 17/10/2024</p>
+            </div>
+            <div class="item">
+                <img src="img/eueessemeucoracao.jpg" alt="Eu e esse meu coração">
+                <div class="caption">Eu e esse meu coração</div>
+                <p>Usuário:@annaju89</p>
+                <p>Data: 17/10/2024</p>
+            </div>
+            <div class="item">
+                <img src="img/quebrandogelo.jpg" alt="Quebrando o gelo">
+                <div class="caption">Quebrando o gelo</div>
+                <p>Usuário:@67junior</p>
+                <p>Data: 17/10/2024</p>
+            </div>
+            <div class="item">
+                <img src="img/imperfeitos.jpg" alt="Imperfeitos">
+                <div class="caption">Imperfeitos</div>
+                <p>Usuário:@kaua32</p>
+                <p>Data: 17/10/2024</p>
+            </div>
         </div>
-        <div>
-          <img src="img/cinco_passos.jpg" alt="cinco_passos" class="imagens">
-          <figcaption>A Cinco Passos de Você</figcaption>
-        </div>
-        <div>
-          <img src="img/coraline.jpg" alt="coraline" class="imagens">
-          <figcaption>Coraline</figcaption>
-        </div>
-        <div>
-          <img src="img/estilhaca-me.jpg" alt="estilhaca-me" class="imagens">
-          <figcaption>Estilhaça-me</figcaption>
-        </div>    
-    </section>
+       
+    </div>
     <?php require_once('footer.php'); ?>
+
+
 </body>
 </html>
