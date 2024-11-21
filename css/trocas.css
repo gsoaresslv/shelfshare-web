@@ -84,8 +84,15 @@ body {
     text-align: justify;
 }
 
-
-
+/* Estilo para o banner */
+img[alt="bannerresultados"] {
+    width: 100%;      
+    height: 30vh;     
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção */
+    display: block;    /* Remove o espaço em branco ao redor da imagem */
+    margin: 0 auto;    /* Centraliza  */
+    margin-bottom: 20px;
+}
 
 
 
