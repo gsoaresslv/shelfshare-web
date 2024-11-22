@@ -17,10 +17,10 @@
             <div class="button-nav">
                 <i class="fa-solid fa-book" id="nav_logo"> ShelfShare</i>
                 <div>
-                    <a href="login.html">
+                    <a href="login.php">
                         <button>Login</button>
                     </a>
-                    <a href="cadastro.html">
+                    <a href="cadastro.php">
                         <button>Cadastre-se</button>
                     </a>
                 </div>

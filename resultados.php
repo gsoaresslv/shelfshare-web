@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados da Pesquisa</title>
     <link rel="stylesheet" href="css/resultados.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="js/resultados.js"></script>
 </head>
+<?php require_once('navbar.php'); ?>
 <body>
     <img src="img/bannerR (2).png" alt="bannerresultados">
 
@@ -15,5 +18,6 @@
           
         </div>
     </main>
+    <?php require_once('footer.php'); ?>
 </body>
 </html>

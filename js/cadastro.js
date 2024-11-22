@@ -25,6 +25,6 @@ function verificaForm(){ // Função para verificar se os campos estão preenchi
     }
     if(nome !== "" && email !== "" && senha !== "" && confirmaSenha !== "" && confirmaSenha === senha && termos){ // Se todos os campos estiverem preenchidos corretamente
         alert("Cadastro realizado com sucesso!"); // Exibe a mensagem de sucesso
-        window.location.href = "home.html"; // Redireciona para a página home.html
+        window.location.href = "inicial.php"; // Redireciona para a página home.html
     }  
 }

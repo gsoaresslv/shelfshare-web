@@ -23,7 +23,7 @@
                         <div class="card-title">
                             <h1>Login</h1>
                         </div>    
-                        <a href="cadastro.html">Cadastre-se!</a>    
+                        <a href="cadastro.php">Cadastre-se!</a>    
                     </div>
                     <div class="card-body">
                         <div class="mb-3">
@@ -42,7 +42,7 @@
                               Lembrar de mim nesse dispositivo
                             </label>
                             <br>
-                            <a class="senha-link" href="recuperasenha.html">Esqueci minha senha</a>
+                            <a class="senha-link" href="recuperasenha.php">Esqueci minha senha</a>
                         </div> 
                         <button class="btn btn-primary" onclick="verificaForm()">Fazer Login</button>    
                     </div>

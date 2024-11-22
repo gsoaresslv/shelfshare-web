@@ -9,6 +9,6 @@ function verificaForm() { // Função para verificar se os campos estão preench
       document.getElementById("erroPassword").innerHTML = "Você precisa preecher com uma Senha!"; // Exibe a mensagem de erro
     } // Exibe a mensagem de erro
     if (usuario !== "" && password !== "") { // Se todos os campos estiverem preenchidos corretamente
-      window.location.href = "home.html"; // Redireciona para a página home.html
+      window.location.href = "inicial.php"; // Redireciona para a página home.html
     }
 }

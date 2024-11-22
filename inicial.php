@@ -171,7 +171,7 @@
             </svg>
         </button>
     </section>   
-
+   
     <div class="destaque">
         <h2>Você pode gostar</h2>
         <div class="livros">
@@ -273,7 +273,7 @@
         </div>
     </div>
 
-    <!-- Sétima parte: Footer (já pronto) -->
+    <!-- Footer-->
     <?php require_once('footer.php'); ?>
 </body>
 </html>

@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+
 header {
     margin: 0; /* Remove margens do header */
 }
@@ -16,7 +16,7 @@ h2 {
     color: white;
     margin-right: 6%;
     margin-left: 5%;
-    font-size: 20px; /* Diminui o tamanho do texto fora da caixa */
+    font-size: 20px; 
 }
 
 nav {
@@ -26,17 +26,17 @@ nav {
 
 .navbar {
     padding: 10px;
-    display: flex; /* Usa flexbox para alinhar os itens */
+    display: flex; /* alinha os itens */
     align-items: center; /* Centraliza verticalmente os itens */
     justify-content: space-between;
-    background-color: #301c6e; /* Cor de fundo da navbar */
-    width: 100vw; /* Garante que a navbar ocupe toda a largura */
-    height: 8vh; /* A altura da navbar */
+    background-color: #301c6e; 
+    width: 100vw; 
+    height: 8vh; 
 }
 
 .buscar-box {
-    width: 140vh; /* Diminuindo a largura da caixa de texto */
-    height: 5vh; /* Diminuindo a altura da caixa de texto */
+    width: 140vh; 
+    height: 5vh; 
     background-color: #ffff;
     border-radius: 5px; /* Borda arredondada */
     display: flex;
@@ -68,18 +68,27 @@ nav {
 .buscar-box .input-buscar input {
     border: 0;
     outline: 0;
-    font-size: 14px; /* Diminui o tamanho do texto dentro da caixa */
+    font-size: 14px; 
 }
 
 .icones {
     color: white;
-    display: flex; /* Alinha os ícones em linha */
+    display: flex; 
     margin-right: 4%;
 }
 
-/* Margem entre os ícones */
-.icones svg {
-    margin-left: 35px;
-    width: 3vw;  /* Aumenta o tamanho dos ícones */
-    height: 4vh; /* Aumenta o tamanho dos ícones */
+/* Estilos para os ícones dentro dos links */
+.icones a {
+    display: flex; /* Garante que o ícone SVG ocupe toda a área clicável do link */
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px; /* Margem entre os links */
+    text-decoration: none; /* Remove a decoração padrão do link */
+    color: white; /* Garante que os ícones mantenham a cor branca */
+}
+
+/* Tamanho dos ícones */
+.icones a svg {
+    width: 3vw;  
+    height: 4vh; 
 }
