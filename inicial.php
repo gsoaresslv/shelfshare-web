@@ -173,104 +173,91 @@
     </section>   
    
     <div class="destaque">
-        <h2>Você pode gostar</h2>
-        <div class="livros">
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+        <div class="container-destaque">
+            <h2>Você pode gostar</h2>
+            <div class="livros">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/biblioteca.jpg" alt="A biblioteca da meia noite">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
-            
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                <div class="item">
+                    <p><strong>É assim que acaba</strong></p>
+                    <div class="image-wrapper">
+                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                    </div>
+                    <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
 
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
-                </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
             </div>
-
-            <div class="item">
-                <p><strong>É assim que acaba</strong></p>
-                <div class="image-wrapper">
-                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
-                </div>
-                <p><strong>Autor:</strong> Colleen Hoover</p>
-            </div>
-        </div>
+        </div>   
     </div>
 
     <!-- Footer-->

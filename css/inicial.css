@@ -463,56 +463,94 @@ h1{
     max-width: 400px;
     text-align: center;
     transition: transform 0.2s;
-  }
+}
 
 .destaque {
-    background-color: #f4f4f4; /* Cor de fundo da div destaque */
-    color: white;
+    background-color: #f4f4f4;
     text-align: center;
-    padding: 20px 0;
     width: 100%; /* Ocupa toda a largura */
 }
 
-.destaque h2 {
-    font-size: 2rem;
-    margin-top: 2rem;
-    color: black;
+.container-destaque {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    width: 87%; /* Ajustado para maior responsividade */
+    margin: 2rem auto; /* Centraliza e dá espaço ao redor */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona profundidade */
+    position: relative;
+    overflow: hidden; /* Esconde partes excedentes */
 }
+
+/* Detalhes decorativos */
+.container-destaque::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+    z-index: 0;
+    transform: rotate(-25deg);
+}
+
+/* Atualiza o texto dentro */
+.container-destaque h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    position: relative;
+    color: #301c6e;
+}
+.container-destaque p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    z-index: 1;
+    position: relative;
+}
+
+.container-destaque {
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+
 
 .livros {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem; /* 20px convertido para rem (20/16) */
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 1.25rem; /* 20px convertido para rem */
 }
 
 .item {
-    margin: 1rem;
     background-color: #fff;
-    border: 1px solid #ccc;
-    width: 14rem; /* Aumentada a largura */
-    height: 22rem;
-    padding: 20px;
-    border-radius: 0.5rem;
+    border: 0.0625rem solid #ccc; /* 1px convertido para rem */
+    width: 14rem; /* Largura do item */
+    height: 22rem; /* Altura do item */
+    padding: 1.25rem; /* 20px convertido para rem */
+    border-radius: 0.5rem; /* Mantido em rem */
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.item:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px (0, 0, 0, 0.2);
+.item:hover {
+    transform: translateY(-0.625rem); /* 10px convertido para rem (10/16) */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 8px e 16px convertidos para rem */
 }
 
 .image-wrapper img {
-    width: 80%;
-    height: 80%;
-    margin-bottom: 10px;
+    width: 80%; /* Mantido como porcentagem */
+    height: 80%; /* Mantido como porcentagem */
+    margin-bottom: 0.625rem; /* 10px convertido para rem (10/16) */
     object-fit: contain;
 }
 
 .item p {
     font-size: 1rem;
     color: #333;
-    margin: 10px 0;
+    margin: 0.625rem 0; /* 10px convertido para rem */
 }
