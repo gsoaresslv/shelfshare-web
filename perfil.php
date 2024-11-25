@@ -3,50 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/perfil.css">
-    <link rel="stylesheet" href="css/navbar.css"> 
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="js/perfil.js"></script>  
-    <title>Meu Perfil</title>
+    <script src="js/perfil.js" defer></script>
 </head>
 <body>
 <?php require_once('navbar.php'); ?>
-<main>
-    <section class="profile-section">
-        <div class="profile-dow">
-        <div class="profile-pic"></div>
+
+    <!-- Container 1: Banner e Foto do Usuário -->
+    <div class="banner-container">
+        <div class="banner"></div>
+        <div class="profile-pic">
+            <img src="img/boy.jpg" alt="Foto do Usuário">
+        </div>
+    </div>
+
+    <!-- Container 2: Informações do Perfil -->
+    <div class="profile-info-container">
         <div class="profile-info">
-            <h2>Nome de usuário</h2>
-            <div class="status">
-                <span><div id="numberseg">400</div> <br> Seguidores</span>
-                <span><div id="numberseg">400</div> <br> Seguindo</span>
-                <span><div id="iconsalvos"></div><i class="bi bi-bookmarks"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1z"/>
-                    <path d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1"/>
-                  </svg><br></i> <div id="salvo">Salvos</span></div>
+            <h1>Nome de Usuário</h1>
+            <p class="bio">Leitor apaixonado por ficção e mistério. Sempre em busca de uma nova leitura inspiradora.</p>
+            <div class="followers-following">
+                <p><strong>200</strong> Seguidores</p>
+                <p><strong>180</strong> Seguindo</p>
             </div>
-            <div class="profile-buttons">
-                <button id="addBookBtn">Adicionar Livro</button>
-                <button id="editProfileBtn">Editar perfil</button>
+            <!-- Ícones SVG clicáveis -->
+            <div class="profile-actions">
+                <a href="salvos.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                    <path d="M2 2v13.5l6-3.5 6 3.5V2z"/>
+                </svg></a>
+                <a href="trocas.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                     <path d="M19 2H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H8V4h11v16zM6 20H4V4c0-1.1.9-2 2-2h1v2H6v16zm8-9H9v-2h5v2zm-5 4h5v-2H9v2z"/>
+                </svg></a>
             </div>
+            <!-- Botão de editar perfil -->
+            <a href="editarperfil.php"><button class="edit-btn">Editar Perfil</button></a>
+            
         </div>
-        </div>
-        <div class="book-section">
-            <h3>Meus Livros</h3>
+    </div>
+
+    <!-- Container 3: Feed de Livros -->
+    <div class="feed-container">
+        <div class="feed">
+            <h3>Livros Postados</h3>
             <div class="book-grid">
-                <!-- Placeholder para livros -->
-                <img src="img/a5passosdevc.jpg" alt="Livro 1" class="book-img">
-                <img src="img/acaba.jpg" alt="Livro 2" class="book-img">
-                <img src="img/quebrandogelo.jpg" alt="Livro 3" class="book-img">
-                <img src="img/asmusicasquevocenuncaouviu.jpg" alt="Livro 4" class="book-img">
-                <img src="img/verao.jpg" alt="Livro 5" class="book-img">
-                <img src="img/imperfeitos.jpg" alt="Livro 6" class="book-img">
-                <img src="img/sete_maridos.jpg" alt="Livro 7" class="book-img">
-                <img src="img/todas_as_suas_imperfeicoes.jpg" alt="Livro 8" class="book-img">
+                <img src="img/verao.jpg" alt="Livro 1">
+                <img src="img/verao.jpg" alt="Livro 2">
+                <img src="img/verao.jpg" alt="Livro 3">
+                <img src="img/verao.jpg" alt="Livro 4">
+                <img src="img/verao.jpg" alt="Livro 5">
+                <img src="img/verao.jpg" alt="Livro 6">
+                
             </div>
         </div>
-    </section>
-</main>
-<?php require_once('footer.php'); ?>
+    </div>
+    <?php require_once('navbar.php'); ?>
+
 </body>
 </html>

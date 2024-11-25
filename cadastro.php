@@ -25,7 +25,7 @@
                         <div class="card-title">
                             <h1>Cadastro</h1> 
                         </div>    
-                        <a href="login.html">Fazer Login</a> <!-- Link para a página de login -->
+                        <a href="login.php">Fazer Login</a> <!-- Link para a página de login -->
                     </div>  
                     <div class="card-body">
                         <div class="mb-3">

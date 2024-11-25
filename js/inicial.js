@@ -145,7 +145,7 @@ window.onload = exibirEnderecos;
                     .then(data => {
                         if (data.items) {
                             // Pegando os primeiros 5 resultados e criando um parâmetro de URL
-                            const results = data.items.slice(0, 5).map(item => {
+                            const results = data.items.slice(0, 10).map(item => {
                                 const title = item.volumeInfo.title;
                                 const authors = item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : 'Autor não disponível';
                                 const image = item.volumeInfo.imageLinks ? item.volumeInfo.imageLinks.thumbnail : 'https://via.placeholder.com/128x200';
@@ -153,7 +153,7 @@ window.onload = exibirEnderecos;
                             });
 
                             // Enviando os resultados para a página de resultados como parâmetros de URL
-                            const resultsUrl = `resultados.html?query=${encodeURIComponent(query)}&results=${encodeURIComponent(JSON.stringify(results))}`;
+                            const resultsUrl = `resultados.php?query=${encodeURIComponent(query)}&results=${encodeURIComponent(JSON.stringify(results))}`;
                             window.location.href = resultsUrl;
                         } else {
                             alert("Nenhum livro encontrado para sua pesquisa.");
