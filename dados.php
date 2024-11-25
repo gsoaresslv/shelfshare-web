@@ -47,8 +47,9 @@
                     </div>
                     
                     <div class="button">
-                        <button class="salvar">Salvar</button>
+                        <a href="salvos.php" class="salvar-link">Salvar</a>
                     </div>
+
             </div>
         </div>
     </div>

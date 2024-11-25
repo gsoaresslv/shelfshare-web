@@ -6,30 +6,16 @@
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" async defer></script>
     <script src="https://unpkg.com/scrollreveal" async defer></script>
 </head>
-<header>
-    <!--navbar com os icones para outras paginas-->
-    <nav id="navbar">
-        <i class="fa-solid fa-book" id="nav_logo"> ShelfShare</i>
-        <ul id="nav_list">
-            <li class="nav-item">
-                <a href="index.html">Início</a>
-            </li>
-            <li class="nav-item-active">
-                <a href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a href="avaliacoes.html">Avaliações</a>
-            </li>
-        </ul>
-        <a href="login.html"><button>Fazer Login</button></a>
-    </nav>
-</header>    
+
 <body>
+<?php require_once('navbar.php'); ?>
     <!--dados que estão no body-->
     <div class="container-sobre">    
         <div class="hero-sobre">
@@ -53,23 +39,6 @@
         </main>
     </div>
     <!--footer com icones para redes sociais-->
-    <footer>
-        <div id="footer_items">
-            <span id="copyright">
-               <p>&copy; ShelfShare</p>
-            </span>
-            <div class="social-media-buttons">
-                <a href="mailto:shelfsharepi@gmail.com">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-                <a href="https://www.instagram.com/shelfshare.pi/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61561101542841">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+    <?php require_once('footer.php'); ?>
 </body>
 </html>
