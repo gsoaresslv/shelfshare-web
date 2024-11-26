@@ -153,7 +153,7 @@ window.onload = exibirEnderecos;
                             });
 
                             // Enviando os resultados para a página de resultados como parâmetros de URL
-                            const resultsUrl = `resultados.php?query=${encodeURIComponent(query)}&results=${encodeURIComponent(JSON.stringify(results))}`;
+                            const resultsUrl = `resultados.html?query=${encodeURIComponent(query)}&results=${encodeURIComponent(JSON.stringify(results))}`;
                             window.location.href = resultsUrl;
                         } else {
                             alert("Nenhum livro encontrado para sua pesquisa.");
