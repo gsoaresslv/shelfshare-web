@@ -1,17 +1,27 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll("button[data-email]");
+const dialog = document.getElementById('notification-dialog');
+const openDialogBtn = document.querySelector('.open-dialog-btn');
 
-    buttons.forEach(button => {
-        button.addEventListener("click", function() {
-            const email = this.getAttribute("data-email");
-            const subject = "Contato sobre seu livro";
-            const body = "Olá, estou entrando em contato sobre o livro que você salvou.";
-            
-            // Montar o link mailto com email, assunto e corpo
-            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            
-            // Abrir o cliente de e-mail
-            window.location.href = mailtoLink;
-        });
-    });
+openDialogBtn.addEventListener('click', () => {
+  dialog.style.display = 'flex';
+});
+
+dialog.addEventListener('click', (event) => {
+  if (event.target === dialog) {
+    dialog.style.display = 'none';
+  }
+});
+
+// Alternar entre "Seguir" e "Seguindo"
+document.querySelectorAll('.action-btn').forEach((button) => {
+  button.addEventListener('click', () => {
+    if (button.classList.contains('following')) {
+      button.textContent = 'Seguir';
+      button.classList.remove('following');
+      button.style.backgroundColor = '#301c6e'; 
+    } else {
+      button.textContent = 'Seguindo';
+      button.classList.add('following');
+      button.style.backgroundColor = '#aaa'; 
+    }
+  });
 });
