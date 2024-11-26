@@ -150,6 +150,7 @@ header {
 
 #cta .description {
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 #cta_buttons {
