@@ -9,7 +9,9 @@
 <header>
     <nav>
         <div class="navbar">
-            <h2>Shelfshare </h2>
+            <a href="inicial.php">
+                <h2>Shelfshare </h2>
+            </a>
             <div class="buscar-box">
                 <div class="input-buscar">
                     <input type="text" placeholder="Faça uma busca">

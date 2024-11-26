@@ -18,7 +18,7 @@
                 <img src="img/logo.png" alt="imagembackground" class="imgback">
             </div>
             <div class="right-login">
-                <div class="card">
+                <form class="card" action="logar.php" method="POST">
                     <div class="card-head">
                         <div class="card-title">
                             <h1>Login</h1>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">Senha</label>
-                            <input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Senha"/>
+                            <input type="password" class="form-control" name="senha" id="inputPassword" placeholder="Senha"/>
                             <p id="erroPassword"></p>
                         </div>
                         <div class="form-check">
@@ -43,10 +43,10 @@
                             </label>
                             <br>
                             <a class="senha-link" href="recuperasenha.php">Esqueci minha senha</a>
-                        </div> 
-                        <button class="btn btn-primary" onclick="verificaForm()">Fazer Login</button>    
+                        </div>
+                        <button type="submit" class="btn btn-primary">Fazer Login</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </body>
