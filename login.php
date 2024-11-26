@@ -13,18 +13,25 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+    <!-- Div principal para a página de login -->
         <div class="main-login">
             <div class="left-login">
+            <!-- Coluna à esquerda contendo a imagem de fundo -->
                 <img src="img/logo.png" alt="imagembackground" class="imgback">
             </div>
+            <!-- Coluna à direita com o formulário de login -->
             <div class="right-login">
+                <!-- Formulário de login que envia os dados para o arquivo 'logar.php' -->
                 <form class="card" action="logar.php" method="POST">
+                    <!-- Cabeçalho do cartão do formulário -->
                     <div class="card-head">
                         <div class="card-title">
+                            <!-- Título principal do formulário -->
                             <h1>Login</h1>
                         </div>    
                         <a href="cadastro.php">Cadastre-se!</a>    
                     </div>
+                    <!-- Corpo do formulário -->
                     <div class="card-body">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
@@ -44,6 +51,7 @@
                             <br>
                             <a class="senha-link" href="recuperasenha.php">Esqueci minha senha</a>
                         </div>
+                        <!-- Botão de submissão do formulárioo -->
                         <button type="submit" class="btn btn-primary">Fazer Login</button>
                     </div>
                 </form>
