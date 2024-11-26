@@ -50,7 +50,7 @@
 
                
                 <div class="btn_editar">
-                    <a href="perfil.html"><button class="editar">Editar</button></a>
+                    <a href="perfil.php"><button class="editar">Editar</button></a>
                 </div>
             </div>    
         </div>

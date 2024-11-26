@@ -30,13 +30,10 @@
                 <p><strong>200</strong> Seguidores</p>
                 <p><strong>180</strong> Seguindo</p>
             </div>
-            <!-- Ícones SVG clicáveis -->
+            <!-- Ícone SVG clicável -->
             <div class="profile-actions">
                 <a href="salvos.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                     <path d="M2 2v13.5l6-3.5 6 3.5V2z"/>
-                </svg></a>
-                <a href="trocas.php"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                     <path d="M19 2H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H8V4h11v16zM6 20H4V4c0-1.1.9-2 2-2h1v2H6v16zm8-9H9v-2h5v2zm-5 4h5v-2H9v2z"/>
                 </svg></a>
             </div>
             <!-- Botão de editar perfil -->
@@ -47,21 +44,73 @@
     </div>
 
     <!-- Container 3: Feed de Livros -->
-    <div class="feed-container">
-        <div class="feed">
-            <h3>Livros Postados</h3>
-            <div class="book-grid">
-                <img src="img/verao.jpg" alt="Livro 1">
-                <img src="img/verao.jpg" alt="Livro 2">
-                <img src="img/verao.jpg" alt="Livro 3">
-                <img src="img/verao.jpg" alt="Livro 4">
-                <img src="img/verao.jpg" alt="Livro 5">
-                <img src="img/verao.jpg" alt="Livro 6">
-                
+    <div class="destaque">
+        <h2>Livros</h2>
+        <div class="livros">
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                   <a href="dados.php"><img src="img/assim-acaba.jpg" alt="É assim que acaba"></a> 
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
+            </div>
+
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
+            </div>
+
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
+            </div>
+
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
+            </div>
+
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
+            </div>
+
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
+            </div>
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
+            </div>
+            <div class="item">
+                <p><strong>É assim que acaba</strong></p>
+                <div class="image-wrapper">
+                    <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                </div>
+                <p><strong>Autor:</strong> Colleen Hoover</p>
             </div>
         </div>
     </div>
-    <?php require_once('navbar.php'); ?>
+    <?php require_once('footer.php'); ?>
 
 </body>
 </html>

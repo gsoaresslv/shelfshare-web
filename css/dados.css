@@ -121,9 +121,26 @@ body {
     align-items: center;
     display: flex;
 }
-.salvar:hover{
+
+/* Estilo para o link do botão */
+.salvar-link {
+    display: inline-block; 
+    background-color: #301c6e;
+    color: white; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 0.3rem; 
+    text-align: center; 
+    text-decoration: none;
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    width: 70%;
+    height: 3rem;
+}
+
+/* Efeito de hover */
+.salvar-link:hover {
     background-color: #563d91;
-    border: #301c6e 0.1rem solid;
 }
 
 
@@ -185,12 +202,12 @@ body {
 
 .prev, .next {
     background-color: rgba(194, 191, 191, 0.5); /* Fundo semitransparente */
-    border: none; /* Remove a borda padrão */
-    font-size: 24px; /* Tamanho da seta */
-    cursor: pointer; /* Ícone de "mãozinha" ao passar o mouse */
+    border: none; 
+    font-size: 24px; 
+    cursor: pointer; 
     padding: 10px; /* Espaçamento interno */
     width: 60px;  /* Largura e altura iguais para garantir que seja um círculo */
-    height: 60px; /* Altura igual à largura */
+    height: 60px; 
     border-radius: 50%; /* Transforma o botão em um círculo */
     position: absolute; /* Posição absoluta para fixar nas extremidades */
     top: 50%;
@@ -266,7 +283,7 @@ body {
     right: 50px;
     width: 60px;
     height: 60px;
-    background-color: #3f2468; /* Cor roxa similar à da imagem */
+    background-color: #3f2468; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -288,7 +305,7 @@ body {
 }
 
 .botao-flutuante-whatsapp:hover {
-    background-color: #563d91; /* Tom mais claro ao passar o mouse */
+    background-color: #563d91; 
 }
 
 .botao-flutuante-whatsapp i {

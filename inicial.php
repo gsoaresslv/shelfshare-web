@@ -181,7 +181,7 @@
                 <div class="item">
                     <p><strong>É assim que acaba</strong></p>
                     <div class="image-wrapper">
-                        <img src="img/assim-acaba.jpg" alt="É assim que acaba">
+                        <a href="dados.php"><img src="img/assim-acaba.jpg" alt="É assim que acaba"></a>
                     </div>
                     <p><strong>Autor:</strong> Colleen Hoover</p>
                 </div>
