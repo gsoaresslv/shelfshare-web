@@ -30,12 +30,17 @@
                     <div class="card-body">
                         <div class="mb-3">
                             <label for="username" class="form-label">Criar Nome de Usuário</label>
-                            <input type="text" class="form-control" name="username" id="inputNome" aria-describedby="emailHelpId" placeholder="Usuário"/>
+                            <input type="text" class="form-control" name="username" id="inputNome" placeholder="Usuário"/>
                             <p id="erroNome"></p> <!--exibir mensagens de erro -->
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" name="email" id="inputEmail" aria-describedby="emailHelpId" placeholder="Email"/>
+                            <p id="erroEmail"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="telefone" class="form-control" name="telefone" id="inputTelefone" placeholder="Telefone"/>
                             <p id="erroEmail"></p>
                         </div>
                         <div class="mb-3">
@@ -51,54 +56,6 @@
                         </div> 
                         <!-- Botão para concluir o cadastro -->
                         <button type="submit" class="btn btn-primary">Concluir Cadastro</button> 
-<?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-        $inputNome = filter_var(trim($_POST['Usuário']), FILTER_SANITIZE_STRING);
-        $inputSenha = trim($_POST['Senha']);
-        $inputConfirmarSenha = trim($_POST['Confirmar Senha']);
-
-        // Função para validar a senha
-        function validarSenha($senha) {
-            // Expressão regular para validar a senha
-            if (strlen($senha) < 8) {
-                return "A senha deve ter pelo menos 8 caracteres.";
-            }
-            if (!preg_match('/[A-Z]/', $senha)) {
-                return "A senha deve conter pelo menos uma letra maiúscula.";
-            }
-            if (!preg_match('/[a-z]/', $senha)) {
-                return "A senha deve conter pelo menos uma letra minúscula.";
-            }
-            if (!preg_match('/[0-9]/', $senha)) {
-                return "A senha deve conter pelo menos um número.";
-            }
-            if (!preg_match('/[\W_]/', $senha)) {
-                return "A senha deve conter pelo menos um caractere especial (por exemplo: @, #, $, %, etc.).";
-            }
-
-            return true; // Senha válida
-        }
-
-        // Validação de senha
-        if ($inputSenha !== $inputConfirmarSenha) {
-            echo "As senhas não coincidem.";
-        } else {
-            $validacao_senha = validarSenha($inputSenha);
-            if ($validacao_senha !== true) {
-                echo $validacao_senha; // Exibir erro de validação
-            } else {
-                // Senha válida, você pode agora processar o cadastro (ex: salvar no banco)
-                echo "Cadastro realizado com sucesso!";
-
-                // Exemplo de hashing da senha antes de salvar no banco de dados
-                $senha_hash = password_hash($inputSenha, PASSWORD_BCRYPT);
-
-                // Salvar $username e $senha_hash no banco de dados aqui
-            }
-        }
-    }
-?>
                     </div>
                 </form>
             </div>

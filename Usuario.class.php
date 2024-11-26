@@ -2,14 +2,14 @@
 // Classe com funções para logar, sair e verificar se o usuário está logado
 
 class Usuario{
-    public function logar($username, $senha): bool{
+    public function logar($email, $senha): bool{
         global $pdo; // Recebendo a varável global
 
         // Verificando se o usuário e senha existem no banco de dados, e bindando valores para evitar SQL Injection
-        $sql = "SELECT * FROM usuario WHERE username = :username AND senha = :senha";
-        $sql = $pdo->prepare(query: $sql);
-        $sql->bindValue(param: "username", value: $username);
-        $sql->bindValue(param: "senha", value: $senha);
+        $sql = "SELECT * FROM usuario WHERE email = :email AND senha = :senha";
+        $sql = $pdo->prepare($sql);
+        $sql->bindValue(":email", $email, PDO::PARAM_STR);
+        $sql->bindValue(":senha", $senha, PDO::PARAM_STR);
         $sql->execute();
 
         if($sql->rowCount() > 0){ // Se retornar algum valor, o usuário existe
@@ -44,6 +44,38 @@ class Usuario{
         }
 
         return $array;
+    }
+
+    public function verEmail($email){
+        global $pdo;
+        $sql = "SELECT * FROM usuario WHERE email = :email";
+        $sql = $pdo->prepare($sql);
+        $sql->bindValue("email", $email);
+        $sql->execute();
+
+        if($sql->rowCount() > 0){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    public function cadastrar($username, $email, $telefone, $senha){
+        global $pdo;
+        try {
+            echo "Email: " . $email; // Adicionar para depuração
+            $sql = "INSERT INTO `usuario` (`id`, `username`, `email`, `telefone`, `senha`) VALUES (:id, :username, :email, :telefone, :senha)";
+            $sql = $pdo->prepare($sql);
+            $sql->bindValue(":id", null, PDO::PARAM_INT);
+            $sql->bindValue(":username", $username, PDO::PARAM_STR);
+            $sql->bindValue(":email", $email, PDO::PARAM_STR);
+            $sql->bindValue(":telefone", $telefone, PDO::PARAM_STR);
+            $sql->bindValue(":senha", $senha, PDO::PARAM_STR);
+            $sql->execute();
+        } catch (PDOException $e) {
+            echo 'Erro: ' . $e->getMessage();
+        }
     }
 }
 ?>
