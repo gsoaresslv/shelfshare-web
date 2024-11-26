@@ -8,7 +8,7 @@ session_start(); // Inicia a sessão
 // Dados para conexão com o banco de dados
 $localhost = "localhost";
 $user = "root";
-$passw = "";
+$passw = "usbw";
 $banco = "shelfshare";
 
 global $pdo; // Variável global para ser usada em qualquer lugar do código
@@ -18,7 +18,7 @@ global $pdo; // Variável global para ser usada em qualquer lugar do código
 try{ 
     
     // Estrutura básica de conexão com o banco de dados
-    $pdo = new PDO("mysql:dbname=".$banco."; host=".$localhost, $user, $passw);
+    $pdo = new PDO(dsn: "mysql:dbname=".$banco."; host=".$localhost, username: $user,  password: $passw);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
