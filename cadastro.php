@@ -20,7 +20,7 @@
             </div>
             <!-- Seção à direita com o formulário de cadastro -->
             <div class="right-login">
-                <div class="card">
+                <form class="card" action="cadastrar.php" method="POST">
                     <div class="card-head">
                         <div class="card-title">
                             <h1>Cadastro</h1> 
@@ -29,8 +29,8 @@
                     </div>  
                     <div class="card-body">
                         <div class="mb-3">
-                            <label for="usuario" class="form-label">Criar Nome de Usuário</label>
-                            <input type="text" class="form-control" name="usuario" id="inputNome" aria-describedby="emailHelpId" placeholder="Usuário"/>
+                            <label for="username" class="form-label">Criar Nome de Usuário</label>
+                            <input type="text" class="form-control" name="username" id="inputNome" aria-describedby="emailHelpId" placeholder="Usuário"/>
                             <p id="erroNome"></p> <!--exibir mensagens de erro -->
                         </div>
                         <div class="mb-3">
@@ -40,17 +40,17 @@
                         </div>
                         <div class="mb-3">
                             <label for="inputSenha" class="form-label">Criar Senha</label>
-                            <input type="password" class="form-control" name="inputSenha" id="inputSenha" placeholder="Senha"/>
+                            <input type="password" class="form-control" name="senha" id="inputSenha" placeholder="Senha"/>
                             <p id="erroSenha"></p> 
                         </div>
                         <!-- Campo para confirmação de senha -->
                         <div class="mb-3">
                             <label for="inputConfirmarSenha" class="form-label">Confirmar Senha</label>
-                            <input type="password" class="form-control" name="inputConfirmarSenha" id="inputConfirmarSenha" placeholder="Senha"/>
+                            <input type="password" class="form-control" name="confirmarSenha" id="inputConfirmarSenha" placeholder="Senha"/>
                             <p id="erroConfirmaSenha"></p> 
                         </div> 
                         <!-- Botão para concluir o cadastro -->
-                        <button class="btn btn-primary" onclick="verificaForm()">Concluir Cadastro</button> 
+                        <button type="submit" class="btn btn-primary">Concluir Cadastro</button> 
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -100,7 +100,7 @@
     }
 ?>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </body>
