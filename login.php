@@ -51,7 +51,7 @@
                             <br>
                             <a class="senha-link" href="recuperasenha.php">Esqueci minha senha</a>
                         </div>
-                        <!-- Botão de submissão do formulário -->
+                        <!-- Botão de submissão do formulárioo -->
                         <button type="submit" class="btn btn-primary">Fazer Login</button>
                     </div>
                 </form>
