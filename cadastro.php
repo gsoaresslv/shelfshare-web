@@ -48,17 +48,57 @@
                             <label for="inputConfirmarSenha" class="form-label">Confirmar Senha</label>
                             <input type="password" class="form-control" name="inputConfirmarSenha" id="inputConfirmarSenha" placeholder="Senha"/>
                             <p id="erroConfirmaSenha"></p> 
-                        </div>
-                        <!-- Checkbox para aceitar termos de uso -->
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="checkTermos">
-                            <label class="form-check-label" for="flexCheckDefault">
-                              Li e concordo com os <a href="termos.html" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
-                            </label>
-                            <p id="erroTermos"></p> 
-                        </div>    
+                        </div> 
                         <!-- Botão para concluir o cadastro -->
                         <button class="btn btn-primary" onclick="verificaForm()">Concluir Cadastro</button> 
+<?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+        $inputNome = filter_var(trim($_POST['Usuário']), FILTER_SANITIZE_STRING);
+        $inputSenha = trim($_POST['Senha']);
+        $inputConfirmarSenha = trim($_POST['Confirmar Senha']);
+
+        // Função para validar a senha
+        function validarSenha($senha) {
+            // Expressão regular para validar a senha
+            if (strlen($senha) < 8) {
+                return "A senha deve ter pelo menos 8 caracteres.";
+            }
+            if (!preg_match('/[A-Z]/', $senha)) {
+                return "A senha deve conter pelo menos uma letra maiúscula.";
+            }
+            if (!preg_match('/[a-z]/', $senha)) {
+                return "A senha deve conter pelo menos uma letra minúscula.";
+            }
+            if (!preg_match('/[0-9]/', $senha)) {
+                return "A senha deve conter pelo menos um número.";
+            }
+            if (!preg_match('/[\W_]/', $senha)) {
+                return "A senha deve conter pelo menos um caractere especial (por exemplo: @, #, $, %, etc.).";
+            }
+
+            return true; // Senha válida
+        }
+
+        // Validação de senha
+        if ($inputSenha !== $inputConfirmarSenha) {
+            echo "As senhas não coincidem.";
+        } else {
+            $validacao_senha = validarSenha($inputSenha);
+            if ($validacao_senha !== true) {
+                echo $validacao_senha; // Exibir erro de validação
+            } else {
+                // Senha válida, você pode agora processar o cadastro (ex: salvar no banco)
+                echo "Cadastro realizado com sucesso!";
+
+                // Exemplo de hashing da senha antes de salvar no banco de dados
+                $senha_hash = password_hash($inputSenha, PASSWORD_BCRYPT);
+
+                // Salvar $username e $senha_hash no banco de dados aqui
+            }
+        }
+    }
+?>
                     </div>
                 </div>
             </div>
