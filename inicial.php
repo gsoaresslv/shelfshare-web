@@ -1,3 +1,4 @@
+<?php require "verifica.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +15,9 @@
     <title>Inicials</title>
 </head>
 <body>
-    <?php require_once('navbar.php'); ?>
-
+    <?php require_once('navbar.php'); 
+    echo "<h1>Olá, $username</h1>";
+    ?>
     <!-- Seção do Banner -->
     <section class="banner">
         <img src="img/Shelfshare a troca de livros ficou mais fácil (2).jpg" alt="Banner de Troca de Livros">

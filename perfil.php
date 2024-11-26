@@ -1,3 +1,4 @@
+<?php require "verifica.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,7 @@
     <!-- Container 2: Informações do Perfil -->
     <div class="profile-info-container">
         <div class="profile-info">
-            <h1>Nome de Usuário</h1>
+            <?php echo "<h1>$username</h1>" ?> 
             <p class="bio">Leitor apaixonado por ficção e mistério. Sempre em busca de uma nova leitura inspiradora.</p>
             <div class="followers-following">
                 <p><strong>200</strong> Seguidores</p>
@@ -40,6 +41,7 @@
             </div>
             <!-- Botão de editar perfil -->
             <a href="editarperfil.php"><button class="edit-btn">Editar Perfil</button></a>
+            <a href="logout.php"><button class="edit-btn">Sair</button></a>
             
         </div>
     </div>
