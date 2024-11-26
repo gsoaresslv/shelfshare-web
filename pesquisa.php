@@ -1,3 +1,4 @@
+<?php require "verifica.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
