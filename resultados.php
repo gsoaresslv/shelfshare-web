@@ -12,8 +12,10 @@
 </head>
 <?php require_once('navbar.php'); ?>
 <body>
+     <!--Inserindo o banner -->
     <img src="img/bannerR (2).png" alt="bannerresultados">
 
+    <!-- Resultados da pesquisa -->
     <main>
         <div id="resultados">
           

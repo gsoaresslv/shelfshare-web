@@ -16,10 +16,11 @@
 </head>
 <body>
     <?php require_once('navbar.php'); ?>
+     <!-- Insere o banner -->
     <img src="img/bannerR (1).jpeg" alt="bannerresultados">
 
     <div class="container">
-       
+     <!-- Exibe uma galeria de itens, cada um representando um livro com imagem, título, nome do usuário que salvou e os dados -->
         <div class="livros">
             <div class="item">
                 <img src="img/a5passosdevc.jpg" alt="A cinco passos de você">
