@@ -9,7 +9,7 @@ if (isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['ema
     $usuario = new Usuario();
 
     $username = addslashes($_POST['username']);
-    $email = addslashes($_POST['email']);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); 
 
     if($usuario->verEmail($email)){
 

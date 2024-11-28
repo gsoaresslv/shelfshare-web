@@ -7,7 +7,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" async defer></script>
-        <script src="js/login.js" async defer></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
         <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -36,20 +35,10 @@
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email"/>
-                            <p id="erroUser"></p> 
                         </div>
                         <div class="mb-3">
-                            <label for="" class="form-label">Senha</label>
+                            <label for="password" class="form-label">Senha</label>
                             <input type="password" class="form-control" name="senha" id="inputSenha" placeholder="Senha"/>
-                            <p id="erroPassword"></p>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="flexCheckDefault">
-                            <label class="form-check-label mb-2" for="flexCheckDefault">
-                              Lembrar de mim nesse dispositivo
-                            </label>
-                            <br>
-                            <a class="senha-link" href="recuperasenha.php">Esqueci minha senha</a>
                         </div>
                         <!-- Botão de submissão do formulárioo -->
                         <button type="submit" class="btn btn-primary">Fazer Login</button>
