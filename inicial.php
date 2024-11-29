@@ -15,8 +15,7 @@
     <title>Inicials</title>
 </head>
 <body>
-    <?php require_once('navbar.php'); 
-    echo "<h1>Olá, $username</h1>";
+    <?php require_once 'navbar.php';
     ?>
     <!-- Seção do Banner -->
     <section class="banner">

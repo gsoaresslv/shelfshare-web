@@ -9,9 +9,8 @@
 <header>
     <nav>
         <div class="navbar"><!-- Container principal da barra de navegação -->
-            <a href="inicial.php">
                 <h2>Shelfshare </h2>
-            </a>
+            
             <div class="buscar-box"><!-- Caixa de busca na barra de navegação -->
                 <div class="input-buscar">
                     <input type="text" placeholder="Faça uma busca">
